@@ -1,17 +1,17 @@
 package ch.fhnw.oop2.ultimatetowerguide.views;
 
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerListPM;
-import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.VBox;
 
 /**
  * Created by Mario Winiker on 20/12/2016.
  */
-public class ApplicationUI extends BorderPane implements ViewMixin {
+public class ApplicationUI extends VBox implements ViewMixin {
     private final TowerListPM model;
 
     private HeaderBar headerBar;
-    private ListNav listNav;
     private DetailView detailView;
+    private EditView editView;
 
     public ApplicationUI(TowerListPM model) {
         this.model = model;
@@ -21,14 +21,12 @@ public class ApplicationUI extends BorderPane implements ViewMixin {
     @Override
     public void initializeControls() {
         headerBar = new HeaderBar();
-        listNav = new ListNav(model);
-        detailView = new DetailView();
+        detailView = new DetailView(model);
+        editView = new EditView();
     }
 
     @Override
     public void layoutControls() {
-        setTop(headerBar);
-        setLeft(listNav);
-        setCenter(detailView);
+        getChildren().addAll(headerBar, detailView, editView);
     }
 }

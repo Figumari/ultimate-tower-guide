@@ -1,21 +1,30 @@
 package ch.fhnw.oop2.ultimatetowerguide.views;
 
-import javafx.scene.layout.GridPane;
+import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerListPM;
+import javafx.scene.control.SplitPane;
 
 /**
- * Created by Mario Winiker on 20/12/2016.
+ * Created by Mario Winiker on 05.01.17.
  */
-public class DetailView extends GridPane implements ViewMixin{
+public class DetailView extends SplitPane implements ViewMixin {
+    private final TowerListPM model;
 
-    public DetailView() {
+    private ListNav listNav;
+    private PresentationView presentationView;
+
+    public DetailView(TowerListPM model) {
+        this.model = model;
         init();
     }
 
     @Override
     public void initializeControls() {
+        listNav = new ListNav(model);
+        presentationView = new PresentationView();
     }
 
     @Override
     public void layoutControls() {
+        getItems().addAll(listNav, presentationView);
     }
 }
