@@ -20,7 +20,7 @@ public class DetailView extends SplitPane implements ViewMixin {
     @Override
     public void initializeControls() {
         listNav = new ListNav(model);
-        presentationView = new PresentationView();
+        presentationView = new PresentationView(model);
     }
 
     @Override

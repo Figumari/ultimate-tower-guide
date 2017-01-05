@@ -1,5 +1,7 @@
 package ch.fhnw.oop2.ultimatetowerguide.presentationmodels;
 
+import javafx.beans.property.IntegerProperty;
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -19,6 +21,9 @@ import java.util.stream.Stream;
 public class TowerListPM {
     private static final String FILE_NAME = "towers.csv";
     private static final String SEMICOLON = ";";
+
+//??    Warum final?
+    private final IntegerProperty selectedTowerId = new SimpleIntegerProperty(-1);
 
     private final ObservableList<TowerPM> towers = FXCollections.observableArrayList();
 
@@ -52,5 +57,17 @@ public class TowerListPM {
 
     public ObservableList<TowerPM> getTowers() {
         return towers;
+    }
+
+    public int getSelectedTowerId() {
+        return selectedTowerId.get();
+    }
+
+    public IntegerProperty selectedTowerIdProperty() {
+        return selectedTowerId;
+    }
+
+    public void setSelectedTowerId(int selectedTowerId) {
+        this.selectedTowerId.set(selectedTowerId);
     }
 }
