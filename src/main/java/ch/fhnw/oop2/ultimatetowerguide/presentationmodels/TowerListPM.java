@@ -27,10 +27,56 @@ public class TowerListPM {
 
     private final ObservableList<TowerPM> towers = FXCollections.observableArrayList();
 
-//    Überträgt eine Liste von Türmen in eine ObservableList
+    private final TowerPM towerProxy = new TowerPM();
+
+
+
     public TowerListPM() {
+//    Überträgt eine Liste von Türmen in eine ObservableList
         towers.addAll(readFromFile());
+
+        selectedTowerIdProperty().addListener((observable, oldValue, newValue) -> {
+            TowerPM oldSelection = getTower(oldValue.intValue());
+            TowerPM newSelection = getTower(newValue.intValue());
+
+            if (oldSelection != null) {
+                towerProxy.idProperty().unbindBidirectional(oldSelection.idProperty());
+                towerProxy.rankProperty().unbindBidirectional(oldSelection.rankProperty());
+                towerProxy.buildingProperty().unbindBidirectional(oldSelection.buildingProperty());
+                towerProxy.cityProperty().unbindBidirectional(oldSelection.cityProperty());
+                towerProxy.countryProperty().unbindBidirectional(oldSelection.countryProperty());
+                towerProxy.heightMProperty().unbindBidirectional(oldSelection.heightMProperty());
+                towerProxy.floorsProperty().unbindBidirectional(oldSelection.floorsProperty());
+                towerProxy.buildProperty().unbindBidirectional(oldSelection.buildProperty());
+                towerProxy.architectProperty().unbindBidirectional(oldSelection.architectProperty());
+                towerProxy.architecturalStyleProperty().unbindBidirectional(oldSelection.architecturalStyleProperty());
+                towerProxy.costProperty().unbindBidirectional(oldSelection.costProperty());
+                towerProxy.materialProperty().unbindBidirectional(oldSelection.materialProperty());
+                towerProxy.longitudeProperty().unbindBidirectional(oldSelection.longitudeProperty());
+                towerProxy.latitudeProperty().unbindBidirectional(oldSelection.latitudeProperty());
+                towerProxy.imageURLProperty().unbindBidirectional(oldSelection.imageURLProperty());
+            }
+
+            if (newSelection != null) {
+                towerProxy.idProperty().bindBidirectional(newSelection.idProperty());
+                towerProxy.rankProperty().bindBidirectional(newSelection.rankProperty());
+                towerProxy.buildingProperty().bindBidirectional(newSelection.buildingProperty());
+                towerProxy.cityProperty().bindBidirectional(newSelection.cityProperty());
+                towerProxy.countryProperty().bindBidirectional(newSelection.countryProperty());
+                towerProxy.heightMProperty().bindBidirectional(newSelection.heightMProperty());
+                towerProxy.floorsProperty().bindBidirectional(newSelection.floorsProperty());
+                towerProxy.buildProperty().bindBidirectional(newSelection.buildProperty());
+                towerProxy.architectProperty().bindBidirectional(newSelection.architectProperty());
+                towerProxy.architecturalStyleProperty().bindBidirectional(newSelection.architecturalStyleProperty());
+                towerProxy.costProperty().bindBidirectional(newSelection.costProperty());
+                towerProxy.materialProperty().bindBidirectional(newSelection.materialProperty());
+                towerProxy.longitudeProperty().bindBidirectional(newSelection.longitudeProperty());
+                towerProxy.latitudeProperty().bindBidirectional(newSelection.latitudeProperty());
+                towerProxy.imageURLProperty().bindBidirectional(newSelection.imageURLProperty());
+            }
+        });
     }
+
 
 //    Erstellt eine Liste von Türmen
     private List<TowerPM> readFromFile() {
@@ -53,6 +99,14 @@ public class TowerListPM {
         } catch (URISyntaxException e) {
             throw new IllegalStateException(e);
         }
+    }
+
+    public TowerPM getTower(int id) {
+        return towers.stream().filter(towerPM -> towerPM.getId() == id).findAny().orElse(null);
+    }
+
+    public TowerPM getTowerProxy() {
+        return towerProxy;
     }
 
     public ObservableList<TowerPM> getTowers() {

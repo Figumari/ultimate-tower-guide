@@ -23,6 +23,9 @@ public class TowerPM {
     private final DoubleProperty latitude = new SimpleDoubleProperty();
     private final StringProperty imageURL = new SimpleStringProperty();
 
+    public TowerPM() {
+    }
+
     public TowerPM(String[] line) {
         setId(Integer.valueOf(line[0]));
         setRank(Integer.valueOf(line[1]));
@@ -39,6 +42,7 @@ public class TowerPM {
         setMaterial(line[12]);
         setLongitude(Double.valueOf(line[13]));
         setLatitude(Double.valueOf(line[14]));
+//        setImageURL(line[15]);
     }
 
     public int getId() {

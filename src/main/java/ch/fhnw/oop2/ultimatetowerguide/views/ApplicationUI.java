@@ -22,7 +22,7 @@ public class ApplicationUI extends VBox implements ViewMixin {
     public void initializeControls() {
         headerBar = new HeaderBar();
         detailView = new DetailView(model);
-        editView = new EditView();
+        editView = new EditView(model);
     }
 
     @Override

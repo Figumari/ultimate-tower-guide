@@ -61,7 +61,7 @@ public class ListNav extends VBox implements ViewMixin {
     public void addEventHandlers() {
         listOfTowers.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
-                model.setSelectedTowerId(listOfTowers.getSelectionModel().getSelectedItem().getRank());
+                model.setSelectedTowerId(listOfTowers.getSelectionModel().getSelectedItem().getId());
             }
         });
     }
