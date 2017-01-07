@@ -25,19 +25,24 @@ public class ListNav extends VBox implements ViewMixin {
     private TableColumn<TowerPM, String> locationCity;
     private TableColumn<TowerPM, String> locationCountry;
 
-    private Label totalTowers;
+//    deleteme private Label totalTowers;
+
+// ** Konstruktor ** //
 
     public ListNav(TowerListPM model) {
         this.model = model;
         init();
     }
 
+// ** Methoden ** //
+
     @Override
     public void initializeControls() {
         listOfTowers = new TableView<>(model.getTowers());
         listOfTowers.setEditable(true);
+
         rank = new TableColumn<>("Rank");
-//??        Wieso kann ich hier nicht mit Lambda arbeiten?
+//        question Wieso kann ich hier nicht mit Lambda arbeiten?
         rank.setCellValueFactory(new PropertyValueFactory<>("rank"));
         name = new TableColumn<>("Name");
         name.setCellValueFactory(param -> param.getValue().buildingProperty());
@@ -47,22 +52,28 @@ public class ListNav extends VBox implements ViewMixin {
         locationCity.setCellValueFactory(param -> param.getValue().cityProperty());
         locationCountry = new TableColumn<>("Country");
         locationCountry.setCellValueFactory(param -> param.getValue().countryProperty());
-        totalTowers = new Label();
+//        deleteme totalTowers = new Label();
     }
 
     @Override
     public void layoutControls() {
         location.getColumns().addAll(locationCity, locationCountry);
         listOfTowers.getColumns().addAll(rank, name, location);
-        getChildren().addAll(listOfTowers, totalTowers);
+        getChildren().addAll(listOfTowers);
     }
 
+
     @Override
-    public void addEventHandlers() {
+    public void addValueChangedListeners() {
+//        Schaut, welche Reihe in der Tabele angewählt ist.
         listOfTowers.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
                 model.setSelectedTowerId(listOfTowers.getSelectionModel().getSelectedItem().getId());
             }
         });
     }
+
+//    deleteme public int getFocusedIndex() {
+//        return listOfTowers.getSelectionModel().getFocusedIndex();
+//    }
 }

@@ -6,11 +6,13 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.io.IOException;
+import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -19,21 +21,24 @@ import java.util.stream.Stream;
  * Created by Mario Winiker on 20/12/2016.
  */
 public class TowerListPM {
-    private static final String FILE_NAME = "towers.csv";
+//    question Wie komme ich in den Resources Folder?
+    private static final String FILE_NAME = "saved-towers.csv";
     private static final String SEMICOLON = ";";
 
-//??    Warum final?
+//    question Warum final?
     private final IntegerProperty selectedTowerId = new SimpleIntegerProperty(-1);
 
     private final ObservableList<TowerPM> towers = FXCollections.observableArrayList();
 
     private final TowerPM towerProxy = new TowerPM();
 
-
+// ** Konstruktor ** //
 
     public TowerListPM() {
 //    Überträgt eine Liste von Türmen in eine ObservableList
         towers.addAll(readFromFile());
+//        deleteme System.out.println(towerProxy.getPersonAsString());
+//        deleteme saveFile();
 
         selectedTowerIdProperty().addListener((observable, oldValue, newValue) -> {
             TowerPM oldSelection = getTower(oldValue.intValue());
@@ -77,10 +82,11 @@ public class TowerListPM {
         });
     }
 
-
+// ** File einlesen ** //
 //    Erstellt eine Liste von Türmen
     private List<TowerPM> readFromFile() {
-        return getStreamOfLines(FILE_NAME).skip(1).map(s -> new TowerPM(s.split(SEMICOLON))).collect(Collectors.toList());
+        return getStreamOfLines(FILE_NAME).map(s -> new TowerPM(s.split(SEMICOLON))).collect(Collectors.toList());
+//       deleteme return getStreamOfLines(FILE_NAME).skip(1).map(s -> new TowerPM(s.split(SEMICOLON))).collect(Collectors.toList());
     }
 
 //    Gibt einen Stream vom Typ String zurück
@@ -100,6 +106,20 @@ public class TowerListPM {
             throw new IllegalStateException(e);
         }
     }
+
+// ** File abspeichern ** //
+
+    public void saveFile() {
+//        deleteme ArrayList arrayList = new ArrayList(towers.stream().map(TowerPM::getPersonAsString).collect(Collectors.toList()));
+//        deleteme System.out.println(arrayList);
+        try {
+            Files.write(Paths.get("src/main/resources/saved-towers.csv"), towers.stream().map(TowerPM::getPersonAsString).collect(Collectors.toList()));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+// ** Andere Methoden ** //
 
     public TowerPM getTower(int id) {
         return towers.stream().filter(towerPM -> towerPM.getId() == id).findAny().orElse(null);

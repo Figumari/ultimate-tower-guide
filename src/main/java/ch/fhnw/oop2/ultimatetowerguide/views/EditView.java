@@ -17,6 +17,7 @@ import java.util.Locale;
 public class EditView extends GridPane implements ViewMixin {
 
     private final TowerListPM model;
+    private static final Double meterInFeet = 3.28084;
 
     private final Label labelId = new Label("ID:");
     private final Label labelRank = new Label("Rang:");
@@ -41,7 +42,7 @@ public class EditView extends GridPane implements ViewMixin {
     private TextField textFieldCity;
     private TextField textFieldCountry;
     private TextField textFieldHeightM;
-    private TextField textFieldHeightFT;
+    private Label labelHeightFTValue;
     private TextField textFieldFloors;
     private TextField textFieldBuild;
     private TextField textFieldArchitect;
@@ -66,7 +67,7 @@ public class EditView extends GridPane implements ViewMixin {
         textFieldCity = new TextField();
         textFieldCountry = new TextField();
         textFieldHeightM = new TextField();
-        textFieldHeightFT = new TextField();
+        labelHeightFTValue = new Label();
         textFieldFloors = new TextField();
         textFieldBuild = new TextField();
         textFieldArchitect = new TextField();
@@ -100,7 +101,7 @@ public class EditView extends GridPane implements ViewMixin {
         add(textFieldCity, 1, 2);
         add(textFieldCountry, 4, 2);
         add(textFieldHeightM, 1, 3);
-        add(textFieldHeightFT, 4, 3);
+        add(labelHeightFTValue, 4, 3);
         add(textFieldFloors, 1, 4);
         add(textFieldBuild, 4, 4);
         add(textFieldArchitect, 1, 5);
@@ -112,6 +113,13 @@ public class EditView extends GridPane implements ViewMixin {
 //        add(textFieldImageURL, 1, 8);
     }
 
+//    deleteme @Override
+//    public void addValueChangedListeners() {
+//        textFieldHeightM.textProperty().addListener((observable, oldValue, newValue) -> {
+//
+//        });
+//    }
+
     @Override
     public void addBindings() {
         TowerPM proxy = model.getTowerProxy();
@@ -122,7 +130,7 @@ public class EditView extends GridPane implements ViewMixin {
         textFieldCity.textProperty().bindBidirectional(proxy.cityProperty());
         textFieldCountry.textProperty().bindBidirectional(proxy.countryProperty());
         Bindings.bindBidirectional(textFieldHeightM.textProperty(), proxy.heightMProperty(), new NumberStringConverter(new Locale("de", "CH")));
-        Bindings.bindBidirectional(textFieldHeightFT.textProperty(), proxy.heightFTProperty(), new NumberStringConverter(new Locale("de", "CH")));
+        Bindings.bindBidirectional(labelHeightFTValue.textProperty(), proxy.heightFTProperty(), new NumberStringConverter(new Locale("de", "CH")));
         Bindings.bindBidirectional(textFieldFloors.textProperty(), proxy.floorsProperty(), new NumberStringConverter(new Locale("de", "CH")));
         Bindings.bindBidirectional(textFieldBuild.textProperty(), proxy.buildProperty(), new NumberStringConverter(new Locale("de", "CH")));
         textFieldArchitect.textProperty().bindBidirectional(proxy.architectProperty());
@@ -132,5 +140,9 @@ public class EditView extends GridPane implements ViewMixin {
         Bindings.bindBidirectional(textFieldLongitude.textProperty(), proxy.longitudeProperty(), new NumberStringConverter(new Locale("de", "CH")));
         Bindings.bindBidirectional(textFieldLatitude.textProperty(), proxy.latitudeProperty(), new NumberStringConverter(new Locale("de", "CH")));
 //        textFieldImageURL.textProperty().bindBidirectional(proxy.imageURLProperty());
+
+//        question Wie kann ich das bidirektional machen?
+//        Bindet Feet an Meter
+        proxy.heightFTProperty().bind(proxy.heightMProperty().multiply(meterInFeet));
     }
 }
