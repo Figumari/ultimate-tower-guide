@@ -44,19 +44,11 @@ public class TowerPM {
         setMaterial(line[12]);
         setLongitude(Double.valueOf(line[13]));
         setLatitude(Double.valueOf(line[14]));
-
-//        Warum muss die letzte Instanz so abgesichert werden?
-        if (line.length >= 16) {
-            setImageURL(line[15]);
-        } else {
-            setImageURL("");
-        }
-//        setImageURL(line[15]);
+        setImageURL(line[15]);
     }
 
 //    Erzeugt einen String für das Abspeichern einer Datei.
-//??    Geht das auch anders?
-    public String getPersonAsString() {
+    public String getTowerAsString() {
         return id.getValue()+";"+
                 rank.getValue()+";"+
                 building.getValue()+";"+

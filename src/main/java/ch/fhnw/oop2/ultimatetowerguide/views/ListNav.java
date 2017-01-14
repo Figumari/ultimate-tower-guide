@@ -18,32 +18,34 @@ import javax.security.auth.callback.Callback;
 public class ListNav extends VBox implements ViewMixin {
     private final TowerListPM model;
 
-    private TableView<TowerPM> listOfTowers;
-    private TableColumn<TowerPM, Integer> rank;
+    private TableView<TowerPM> view;
+    private TableColumn<TowerPM, Number> rank;
     private TableColumn<TowerPM, String> name;
     private TableColumn location;
     private TableColumn<TowerPM, String> locationCity;
     private TableColumn<TowerPM, String> locationCountry;
 
-//    deleteme private Label totalTowers;
-
 // ** Konstruktor ** //
 
-    public ListNav(TowerListPM model) {
+    public ListNav(TowerListPM model, TableView<TowerPM> view) {
         this.model = model;
+        this.view = view;
         init();
+        getStyleClass().add("listnav");
     }
 
 // ** Methoden ** //
 
     @Override
     public void initializeControls() {
-        listOfTowers = new TableView<>(model.getTowers());
-        listOfTowers.setEditable(true);
+        view.setItems(model.getTowers());
+        view.setEditable(true);
+        view.requestFocus();
+        view.getSelectionModel().select(0);
+        view.getFocusModel().focus(0);
 
         rank = new TableColumn<>("Rank");
-//        question Wieso kann ich hier nicht mit Lambda arbeiten?
-        rank.setCellValueFactory(new PropertyValueFactory<>("rank"));
+        rank.setCellValueFactory(param -> param.getValue().rankProperty());
         name = new TableColumn<>("Name");
         name.setCellValueFactory(param -> param.getValue().buildingProperty());
         location = new TableColumn("Location");
@@ -52,28 +54,23 @@ public class ListNav extends VBox implements ViewMixin {
         locationCity.setCellValueFactory(param -> param.getValue().cityProperty());
         locationCountry = new TableColumn<>("Country");
         locationCountry.setCellValueFactory(param -> param.getValue().countryProperty());
-//        deleteme totalTowers = new Label();
     }
 
     @Override
     public void layoutControls() {
         location.getColumns().addAll(locationCity, locationCountry);
-        listOfTowers.getColumns().addAll(rank, name, location);
-        getChildren().addAll(listOfTowers);
+        view.getColumns().addAll(rank, name, location);
+        getChildren().addAll(view);
     }
 
 
     @Override
     public void addValueChangedListeners() {
 //        Schaut, welche Reihe in der Tabele angewählt ist.
-        listOfTowers.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+        view.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
-                model.setSelectedTowerId(listOfTowers.getSelectionModel().getSelectedItem().getId());
+                model.setSelectedTowerId(view.getSelectionModel().getSelectedItem().getId());
             }
         });
     }
-
-//    deleteme public int getFocusedIndex() {
-//        return listOfTowers.getSelectionModel().getFocusedIndex();
-//    }
 }

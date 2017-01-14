@@ -1,5 +1,6 @@
 package ch.fhnw.oop2.ultimatetowerguide.presentationmodels;
 
+import javafx.application.Platform;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
 import javafx.collections.FXCollections;
@@ -13,6 +14,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -21,11 +24,9 @@ import java.util.stream.Stream;
  * Created by Mario Winiker on 20/12/2016.
  */
 public class TowerListPM {
-//    question Wie komme ich in den Resources Folder?
-    private static final String FILE_NAME = "saved-towers.csv";
+    private static final String FILE_NAME = "/saved-towers.csv";
     private static final String SEMICOLON = ";";
 
-//    question Warum final?
     private final IntegerProperty selectedTowerId = new SimpleIntegerProperty(-1);
 
     private final ObservableList<TowerPM> towers = FXCollections.observableArrayList();
@@ -37,8 +38,6 @@ public class TowerListPM {
     public TowerListPM() {
 //    Überträgt eine Liste von Türmen in eine ObservableList
         towers.addAll(readFromFile());
-//        deleteme System.out.println(towerProxy.getPersonAsString());
-//        deleteme saveFile();
 
         selectedTowerIdProperty().addListener((observable, oldValue, newValue) -> {
             TowerPM oldSelection = getTower(oldValue.intValue());
@@ -80,13 +79,14 @@ public class TowerListPM {
                 towerProxy.imageURLProperty().bindBidirectional(newSelection.imageURLProperty());
             }
         });
+        sortTowers();
+        Platform.runLater(() -> setSelectedTowerId(towers.get(0).getId()));
     }
 
 // ** File einlesen ** //
 //    Erstellt eine Liste von Türmen
     private List<TowerPM> readFromFile() {
-        return getStreamOfLines(FILE_NAME).map(s -> new TowerPM(s.split(SEMICOLON))).collect(Collectors.toList());
-//       deleteme return getStreamOfLines(FILE_NAME).skip(1).map(s -> new TowerPM(s.split(SEMICOLON))).collect(Collectors.toList());
+        return getStreamOfLines(FILE_NAME).map(s -> new TowerPM(s.split(SEMICOLON, 16))).collect(Collectors.toList());
     }
 
 //    Gibt einen Stream vom Typ String zurück
@@ -110,13 +110,26 @@ public class TowerListPM {
 // ** File abspeichern ** //
 
     public void saveFile() {
-//        deleteme ArrayList arrayList = new ArrayList(towers.stream().map(TowerPM::getPersonAsString).collect(Collectors.toList()));
-//        deleteme System.out.println(arrayList);
+//        todo Erste Zeile Infos.
         try {
-            Files.write(Paths.get("src/main/resources/saved-towers.csv"), towers.stream().map(TowerPM::getPersonAsString).collect(Collectors.toList()));
+            Files.write(Paths.get("src/main/resources/saved-towers.csv"), towers.stream().map(TowerPM::getTowerAsString).collect(Collectors.toList()));
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+// ** Liste sortieren nach Turmhöhe ** //
+
+    public void sortTowers() {
+        FXCollections.sort(towers, Comparator.comparing(TowerPM::getHeightM));
+        FXCollections.reverse(towers);
+
+//        Passt den Rank an.
+        final int[] counter = {1};
+        towers.stream().forEach(towerPM -> {
+            towerPM.setRank(counter[0]);
+            ++counter[0];
+        });
     }
 
 // ** Andere Methoden ** //

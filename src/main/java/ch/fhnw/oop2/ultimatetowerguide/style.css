@@ -1,0 +1,46 @@
+.header {
+    -fx-background-color: #B7C11E;
+}
+
+.save-button {
+    -fx-background-image: url("/save.png");
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: inherit;
+}
+
+.add-button {
+    -fx-background-image: url("/add.png");
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: inherit;
+}
+
+.remove-button {
+    -fx-background-image: url("/remove.png");
+    -fx-background-position: center;
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-color: inherit;
+}
+
+.detail {
+    -fx-min-width: 1200px;
+}
+
+.listnav {
+    -fx-max-width: 540px;
+}
+
+.presentation {
+    -fx-padding: 20px;
+    -fx-hgap: 100px;
+    -fx-vgap: 20px;
+}
+
+.edit {
+    -fx-padding: 20px;
+    -fx-hgap: 40px;
+}

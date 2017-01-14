@@ -3,7 +3,6 @@ package ch.fhnw.oop2.ultimatetowerguide.views;
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerListPM;
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerPM;
 import javafx.beans.binding.Bindings;
-import javafx.beans.property.Property;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
@@ -57,6 +56,7 @@ public class EditView extends GridPane implements ViewMixin {
     public EditView(TowerListPM model) {
         this.model = model;
         init();
+        getStyleClass().add("edit");
     }
 
     @Override
@@ -119,6 +119,10 @@ public class EditView extends GridPane implements ViewMixin {
 //
 //        });
 //    }
+    @Override
+    public void addValueChangedListeners() {
+        textFieldHeightM.setOnAction(event -> model.sortTowers());
+    }
 
     @Override
     public void addBindings() {
@@ -141,7 +145,7 @@ public class EditView extends GridPane implements ViewMixin {
         Bindings.bindBidirectional(textFieldLatitude.textProperty(), proxy.latitudeProperty(), new NumberStringConverter(new Locale("de", "CH")));
 //        textFieldImageURL.textProperty().bindBidirectional(proxy.imageURLProperty());
 
-//        question Wie kann ich das bidirektional machen?
+//        todo Umgekehrt realisieren in TowerListPM
 //        Bindet Feet an Meter
         proxy.heightFTProperty().bind(proxy.heightMProperty().multiply(meterInFeet));
     }
