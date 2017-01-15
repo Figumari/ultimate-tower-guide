@@ -33,7 +33,7 @@ public class EditView extends GridPane implements ViewMixin {
     private final Label labelMaterial = new Label("Material:");
     private final Label labelLongitude = new Label("Längengrad:");
     private final Label labelLatitude = new Label("Breitengrad:");
-//    private final Label labelImageURL = new Label("Bild-URL:");
+    private final Label labelImageURL = new Label("Bild-URL:");
 
     private TextField textFieldId;
     private TextField textFieldRank;
@@ -50,7 +50,7 @@ public class EditView extends GridPane implements ViewMixin {
     private TextField textFieldMaterial;
     private TextField textFieldLongitude;
     private TextField textFieldLatitude;
-//    private TextField textFieldImageURL;
+    private TextField textFieldImageURL;
 
 
     public EditView(TowerListPM model) {
@@ -76,7 +76,7 @@ public class EditView extends GridPane implements ViewMixin {
         textFieldMaterial = new TextField();
         textFieldLongitude = new TextField();
         textFieldLatitude = new TextField();
-//        textFieldImageURL = new TextField();
+        textFieldImageURL = new TextField();
     }
 
     @Override
@@ -95,7 +95,7 @@ public class EditView extends GridPane implements ViewMixin {
         add(labelMaterial, 3, 6);
         add(labelLongitude, 0, 7);
         add(labelLatitude, 3, 7);
-//        add(labelImageURL, 0, 8);
+        add(labelImageURL, 0, 8);
 
         add(textFieldBuilding, 1, 1);
         add(textFieldCity, 1, 2);
@@ -110,15 +110,12 @@ public class EditView extends GridPane implements ViewMixin {
         add(textFieldMaterial, 4, 6);
         add(textFieldLongitude, 1, 7);
         add(textFieldLatitude, 4, 7);
-//        add(textFieldImageURL, 1, 8);
+        add(textFieldImageURL, 1, 8);
+
+//        deleteme
+        setGridLinesVisible(true);
     }
 
-//    deleteme @Override
-//    public void addValueChangedListeners() {
-//        textFieldHeightM.textProperty().addListener((observable, oldValue, newValue) -> {
-//
-//        });
-//    }
     @Override
     public void addValueChangedListeners() {
         textFieldHeightM.setOnAction(event -> model.sortTowers());
@@ -143,7 +140,7 @@ public class EditView extends GridPane implements ViewMixin {
         textFieldMaterial.textProperty().bindBidirectional(proxy.materialProperty());
         Bindings.bindBidirectional(textFieldLongitude.textProperty(), proxy.longitudeProperty(), new NumberStringConverter(new Locale("de", "CH")));
         Bindings.bindBidirectional(textFieldLatitude.textProperty(), proxy.latitudeProperty(), new NumberStringConverter(new Locale("de", "CH")));
-//        textFieldImageURL.textProperty().bindBidirectional(proxy.imageURLProperty());
+        textFieldImageURL.textProperty().bindBidirectional(proxy.imageURLProperty());
 
 //        todo Umgekehrt realisieren in TowerListPM
 //        Bindet Feet an Meter

@@ -31,13 +31,17 @@
 }
 
 .listnav {
-    -fx-max-width: 540px;
 }
 
 .presentation {
     -fx-padding: 20px;
-    -fx-hgap: 100px;
     -fx-vgap: 20px;
+
+    -fx-font-size: 20px;
+}
+
+.rank {
+    -fx-font-size: 80px;
 }
 
 .edit {

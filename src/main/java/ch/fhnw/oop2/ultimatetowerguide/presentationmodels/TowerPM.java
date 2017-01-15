@@ -1,6 +1,8 @@
 package ch.fhnw.oop2.ultimatetowerguide.presentationmodels;
 
 import javafx.beans.property.*;
+import javafx.scene.image.Image;
+import javafx.scene.image.WritableImage;
 
 /**
  * Created by Mario Winiker on 20/12/2016.
@@ -64,7 +66,7 @@ public class TowerPM {
                 material.getValue()+";"+
                 longitude.getValue()+";"+
                 latitude.getValue()+";"+
-                imageURL.getValue()+";";
+                imageURL.getValue();
     }
 
 // ** Methoden ** //

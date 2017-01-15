@@ -7,14 +7,11 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.io.IOException;
-import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -124,9 +121,10 @@ public class TowerListPM {
         FXCollections.sort(towers, Comparator.comparing(TowerPM::getHeightM));
         FXCollections.reverse(towers);
 
+//        todo Rank passt sichnicht mehr an.
 //        Passt den Rank an.
         final int[] counter = {1};
-        towers.stream().forEach(towerPM -> {
+        towers.forEach(towerPM -> {
             towerPM.setRank(counter[0]);
             ++counter[0];
         });
