@@ -10,6 +10,10 @@
     -fx-background-color: inherit;
 }
 
+.save-button:pressed {
+    -fx-background-image: url("/savepressed.png");
+}
+
 .add-button {
     -fx-background-image: url("/add.png");
     -fx-background-position: center;
@@ -18,12 +22,20 @@
     -fx-background-color: inherit;
 }
 
+.add-button:pressed {
+    -fx-background-image: url("/addpressed.png");
+}
+
 .remove-button {
     -fx-background-image: url("/remove.png");
     -fx-background-position: center;
     -fx-background-size: contain;
     -fx-background-repeat: no-repeat;
     -fx-background-color: inherit;
+}
+
+.remove-button:pressed {
+    -fx-background-image: url("/removepressed.png");
 }
 
 .detail {
@@ -46,5 +58,6 @@
 
 .edit {
     -fx-padding: 20px;
-    -fx-hgap: 40px;
+    -fx-hgap: 20px;
+    -fx-vgap: 10px;
 }

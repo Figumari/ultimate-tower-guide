@@ -1,14 +1,14 @@
 package ch.fhnw.oop2.ultimatetowerguide.presentationmodels;
 
 import javafx.beans.property.*;
-import javafx.scene.image.Image;
-import javafx.scene.image.WritableImage;
+
+import java.util.UUID;
 
 /**
  * Created by Mario Winiker on 20/12/2016.
  */
 public class TowerPM {
-    private final IntegerProperty id = new SimpleIntegerProperty();
+    private final StringProperty id = new SimpleStringProperty();
     private final IntegerProperty rank = new SimpleIntegerProperty();
     private final StringProperty building = new SimpleStringProperty();
     private final StringProperty city = new SimpleStringProperty();
@@ -28,10 +28,17 @@ public class TowerPM {
 // ** Konstruktoren ** //
 
     public TowerPM() {
+        setId(UUID.randomUUID().toString());
+        setBuilding("");
+        setCity("");
+        setCountry("");
+        setArchitect("");
+        setArchitecturalStyle("");
+        setMaterial("");
     }
 
     public TowerPM(String[] line) {
-        setId(Integer.valueOf(line[0]));
+        setId(line[0]);
         setRank(Integer.valueOf(line[1]));
         setBuilding(line[2]);
         setCity(line[3]);
@@ -51,7 +58,7 @@ public class TowerPM {
 
 //    Erzeugt einen String für das Abspeichern einer Datei.
     public String getTowerAsString() {
-        return id.getValue()+";"+
+        return  id.getValue()+";"+
                 rank.getValue()+";"+
                 building.getValue()+";"+
                 city.getValue()+";"+
@@ -71,15 +78,16 @@ public class TowerPM {
 
 // ** Methoden ** //
 
-    public int getId() {
+
+    public String getId() {
         return id.get();
     }
 
-    public IntegerProperty idProperty() {
+    public StringProperty idProperty() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id.set(id);
     }
 

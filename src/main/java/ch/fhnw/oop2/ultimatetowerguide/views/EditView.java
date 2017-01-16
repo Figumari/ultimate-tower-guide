@@ -5,6 +5,7 @@ import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerPM;
 import javafx.beans.binding.Bindings;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
 import javafx.util.converter.NumberStringConverter;
 
@@ -16,10 +17,8 @@ import java.util.Locale;
 public class EditView extends GridPane implements ViewMixin {
 
     private final TowerListPM model;
-    private static final Double meterInFeet = 3.28084;
 
     private final Label labelId = new Label("ID:");
-    private final Label labelRank = new Label("Rang:");
     private final Label labelBuilding = new Label("Name:");
     private final Label labelCity = new Label("Stadt:");
     private final Label labelCountry = new Label("Land:");
@@ -35,13 +34,13 @@ public class EditView extends GridPane implements ViewMixin {
     private final Label labelLatitude = new Label("Breitengrad:");
     private final Label labelImageURL = new Label("Bild-URL:");
 
-    private TextField textFieldId;
+    private Label labelShowId;
     private TextField textFieldRank;
     private TextField textFieldBuilding;
     private TextField textFieldCity;
     private TextField textFieldCountry;
     private TextField textFieldHeightM;
-    private Label labelHeightFTValue;
+    private TextField textFieldHeightFT;
     private TextField textFieldFloors;
     private TextField textFieldBuild;
     private TextField textFieldArchitect;
@@ -61,13 +60,13 @@ public class EditView extends GridPane implements ViewMixin {
 
     @Override
     public void initializeControls() {
-        textFieldId = new TextField();
+        labelShowId = new Label();
         textFieldRank = new TextField();
         textFieldBuilding = new TextField();
         textFieldCity = new TextField();
         textFieldCountry = new TextField();
         textFieldHeightM = new TextField();
-        labelHeightFTValue = new Label();
+        textFieldHeightFT = new TextField();
         textFieldFloors = new TextField();
         textFieldBuild = new TextField();
         textFieldArchitect = new TextField();
@@ -97,11 +96,12 @@ public class EditView extends GridPane implements ViewMixin {
         add(labelLatitude, 3, 7);
         add(labelImageURL, 0, 8);
 
+        add(labelShowId, 1, 0, 4, 1);
         add(textFieldBuilding, 1, 1);
         add(textFieldCity, 1, 2);
         add(textFieldCountry, 4, 2);
         add(textFieldHeightM, 1, 3);
-        add(labelHeightFTValue, 4, 3);
+        add(textFieldHeightFT, 4, 3);
         add(textFieldFloors, 1, 4);
         add(textFieldBuild, 4, 4);
         add(textFieldArchitect, 1, 5);
@@ -110,10 +110,17 @@ public class EditView extends GridPane implements ViewMixin {
         add(textFieldMaterial, 4, 6);
         add(textFieldLongitude, 1, 7);
         add(textFieldLatitude, 4, 7);
-        add(textFieldImageURL, 1, 8);
+        add(textFieldImageURL, 1, 8, 4, 1);
+
+        ColumnConstraints columnConstraints01 = new ColumnConstraints();
+        ColumnConstraints columnConstraints02 = new ColumnConstraints(400);
+        ColumnConstraints columnConstraints03 = new ColumnConstraints();
+        ColumnConstraints columnConstraints04 = new ColumnConstraints();
+        ColumnConstraints columnConstraints05 = new ColumnConstraints(400);
+        getColumnConstraints().addAll(columnConstraints01, columnConstraints02, columnConstraints03, columnConstraints04, columnConstraints05);
 
 //        deleteme
-        setGridLinesVisible(true);
+//        setGridLinesVisible(true);
     }
 
     @Override
@@ -125,13 +132,13 @@ public class EditView extends GridPane implements ViewMixin {
     public void addBindings() {
         TowerPM proxy = model.getTowerProxy();
 
-        Bindings.bindBidirectional(textFieldId.textProperty(), proxy.idProperty(), new NumberStringConverter(new Locale("de", "CH")));
+        labelShowId.textProperty().bind(proxy.idProperty());
         Bindings.bindBidirectional(textFieldRank.textProperty(), proxy.rankProperty(), new NumberStringConverter(new Locale("de", "CH")));
         textFieldBuilding.textProperty().bindBidirectional(proxy.buildingProperty());
         textFieldCity.textProperty().bindBidirectional(proxy.cityProperty());
         textFieldCountry.textProperty().bindBidirectional(proxy.countryProperty());
         Bindings.bindBidirectional(textFieldHeightM.textProperty(), proxy.heightMProperty(), new NumberStringConverter(new Locale("de", "CH")));
-        Bindings.bindBidirectional(labelHeightFTValue.textProperty(), proxy.heightFTProperty(), new NumberStringConverter(new Locale("de", "CH")));
+        Bindings.bindBidirectional(textFieldHeightFT.textProperty(), proxy.heightFTProperty(), new NumberStringConverter(new Locale("de", "CH")));
         Bindings.bindBidirectional(textFieldFloors.textProperty(), proxy.floorsProperty(), new NumberStringConverter(new Locale("de", "CH")));
         Bindings.bindBidirectional(textFieldBuild.textProperty(), proxy.buildProperty(), new NumberStringConverter(new Locale("de", "CH")));
         textFieldArchitect.textProperty().bindBidirectional(proxy.architectProperty());
@@ -141,9 +148,5 @@ public class EditView extends GridPane implements ViewMixin {
         Bindings.bindBidirectional(textFieldLongitude.textProperty(), proxy.longitudeProperty(), new NumberStringConverter(new Locale("de", "CH")));
         Bindings.bindBidirectional(textFieldLatitude.textProperty(), proxy.latitudeProperty(), new NumberStringConverter(new Locale("de", "CH")));
         textFieldImageURL.textProperty().bindBidirectional(proxy.imageURLProperty());
-
-//        todo Umgekehrt realisieren in TowerListPM
-//        Bindet Feet an Meter
-        proxy.heightFTProperty().bind(proxy.heightMProperty().multiply(meterInFeet));
     }
 }

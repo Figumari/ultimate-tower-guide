@@ -3,6 +3,8 @@ package ch.fhnw.oop2.ultimatetowerguide.presentationmodels;
 import javafx.application.Platform;
 import javafx.beans.property.IntegerProperty;
 import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
@@ -12,6 +14,7 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.DecimalFormat;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -23,8 +26,9 @@ import java.util.stream.Stream;
 public class TowerListPM {
     private static final String FILE_NAME = "/saved-towers.csv";
     private static final String SEMICOLON = ";";
+    private static final Double meterInFeet = 3.28084;
 
-    private final IntegerProperty selectedTowerId = new SimpleIntegerProperty(-1);
+    private final StringProperty selectedTowerId = new SimpleStringProperty("-1");
 
     private final ObservableList<TowerPM> towers = FXCollections.observableArrayList();
 
@@ -37,8 +41,8 @@ public class TowerListPM {
         towers.addAll(readFromFile());
 
         selectedTowerIdProperty().addListener((observable, oldValue, newValue) -> {
-            TowerPM oldSelection = getTower(oldValue.intValue());
-            TowerPM newSelection = getTower(newValue.intValue());
+            TowerPM oldSelection = getTower(oldValue);
+            TowerPM newSelection = getTower(newValue);
 
             if (oldSelection != null) {
                 towerProxy.idProperty().unbindBidirectional(oldSelection.idProperty());
@@ -77,6 +81,7 @@ public class TowerListPM {
             }
         });
         sortTowers();
+        addValueChangedListeners();
         Platform.runLater(() -> setSelectedTowerId(towers.get(0).getId()));
     }
 
@@ -130,10 +135,26 @@ public class TowerListPM {
         });
     }
 
+// ** Meter und Fuss angleichen ** //
+
+    public void addValueChangedListeners() {
+        towerProxy.heightMProperty().addListener((observable, oldValue, newValue) -> {
+//            abs Prüft die Abweichung damit es keine Schlaufe gibt.
+            if (Math.abs(towerProxy.heightMProperty().multiply(meterInFeet).getValue() - towerProxy.heightFTProperty().getValue()) >= 0.01) {
+                towerProxy.setHeightFT(Math.floor(towerProxy.heightMProperty().multiply(meterInFeet).getValue()*10)/10);
+            }
+        });
+        towerProxy.heightFTProperty().addListener((observable, oldValue, newValue) -> {
+            if (Math.abs(towerProxy.heightFTProperty().divide(meterInFeet).getValue() - towerProxy.heightMProperty().getValue()) >= 0.01) {
+                towerProxy.setHeightM(Math.floor(towerProxy.heightFTProperty().divide(meterInFeet).getValue()*10)/10);
+            }
+        });
+    }
+
 // ** Andere Methoden ** //
 
-    public TowerPM getTower(int id) {
-        return towers.stream().filter(towerPM -> towerPM.getId() == id).findAny().orElse(null);
+    public TowerPM getTower(String id) {
+        return towers.stream().filter(towerPM -> towerPM.getId().equals(id)).findAny().orElse(null);
     }
 
     public TowerPM getTowerProxy() {
@@ -144,15 +165,15 @@ public class TowerListPM {
         return towers;
     }
 
-    public int getSelectedTowerId() {
+    public String getSelectedTowerId() {
         return selectedTowerId.get();
     }
 
-    public IntegerProperty selectedTowerIdProperty() {
+    public StringProperty selectedTowerIdProperty() {
         return selectedTowerId;
     }
 
-    public void setSelectedTowerId(int selectedTowerId) {
+    public void setSelectedTowerId(String selectedTowerId) {
         this.selectedTowerId.set(selectedTowerId);
     }
 }
