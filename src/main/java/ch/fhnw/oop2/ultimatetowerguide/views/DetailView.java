@@ -12,7 +12,6 @@ public class DetailView extends SplitPane implements ViewMixin {
     private final TowerListPM model;
     private final TableView<TowerPM> view;
 
-    private ListNav listNav;
     private PresentationView presentationView;
 
     public DetailView(TowerListPM model, TableView<TowerPM> view) {
@@ -24,12 +23,11 @@ public class DetailView extends SplitPane implements ViewMixin {
 
     @Override
     public void initializeControls() {
-        listNav = new ListNav(model, view);
         presentationView = new PresentationView(model, view);
     }
 
     @Override
     public void layoutControls() {
-        getItems().addAll(listNav, presentationView);
+        getItems().addAll(view, presentationView);
     }
 }

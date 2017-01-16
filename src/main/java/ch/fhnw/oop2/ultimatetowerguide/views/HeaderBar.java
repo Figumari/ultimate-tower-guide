@@ -50,7 +50,10 @@ public class HeaderBar extends ToolBar implements ViewMixin {
         save.addEventHandler(ActionEvent.ACTION, event -> model.saveFile());
 //        todo Generate ID
         add.setOnAction(event -> addTower());
-        remove.setOnAction(event -> model.getTowers().remove(view.getSelectionModel().getFocusedIndex()));
+        remove.setOnAction(event -> {
+            model.getTowers().remove(view.getSelectionModel().getFocusedIndex());
+            model.sortTowers();
+        });
 
     }
 

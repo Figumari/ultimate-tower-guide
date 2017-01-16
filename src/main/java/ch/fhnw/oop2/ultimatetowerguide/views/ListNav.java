@@ -15,10 +15,9 @@ import javax.security.auth.callback.Callback;
 /**
  * Created by Mario Winiker on 20/12/2016.
  */
-public class ListNav extends VBox implements ViewMixin {
+public class ListNav extends TableView<TowerPM> implements ViewMixin {
     private final TowerListPM model;
 
-    private TableView<TowerPM> view;
     private TableColumn<TowerPM, Number> rank;
     private TableColumn<TowerPM, String> name;
     private TableColumn location;
@@ -27,9 +26,8 @@ public class ListNav extends VBox implements ViewMixin {
 
 // ** Konstruktor ** //
 
-    public ListNav(TowerListPM model, TableView<TowerPM> view) {
+    public ListNav(TowerListPM model) {
         this.model = model;
-        this.view = view;
         init();
         getStyleClass().add("listnav");
     }
@@ -38,11 +36,11 @@ public class ListNav extends VBox implements ViewMixin {
 
     @Override
     public void initializeControls() {
-        view.setItems(model.getTowers());
-        view.setEditable(true);
-        view.requestFocus();
-        view.getSelectionModel().select(0);
-        view.getFocusModel().focus(0);
+        setItems(model.getTowers());
+        setEditable(true);
+        requestFocus();
+        getSelectionModel().select(0);
+        getFocusModel().focus(0);
 
         rank = new TableColumn<>("Rank");
         rank.setCellValueFactory(param -> param.getValue().rankProperty());
@@ -59,17 +57,16 @@ public class ListNav extends VBox implements ViewMixin {
     @Override
     public void layoutControls() {
         location.getColumns().addAll(locationCity, locationCountry);
-        view.getColumns().addAll(rank, name, location);
-        getChildren().addAll(view);
+        getColumns().addAll(rank, name, location);
     }
 
 
     @Override
     public void addValueChangedListeners() {
 //        Schaut, welche Reihe in der Tabele angewählt ist.
-        view.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+        getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
-                model.setSelectedTowerId(view.getSelectionModel().getSelectedItem().getId());
+                model.setSelectedTowerId(getSelectionModel().getSelectedItem().getId());
             }
         });
     }

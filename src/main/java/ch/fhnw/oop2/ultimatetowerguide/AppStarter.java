@@ -3,6 +3,7 @@ package ch.fhnw.oop2.ultimatetowerguide;
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerListPM;
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerPM;
 import ch.fhnw.oop2.ultimatetowerguide.views.ApplicationUI;
+import ch.fhnw.oop2.ultimatetowerguide.views.ListNav;
 import com.sun.tools.javadoc.Start;
 import javafx.application.Application;
 import javafx.scene.Parent;
@@ -19,7 +20,7 @@ public class AppStarter extends Application{
     @Override
     public void start(Stage primaryStage) throws Exception{
         TowerListPM model = new TowerListPM();
-        TableView<TowerPM> view = new TableView<>();
+        ListNav view = new ListNav(model);
 
         Parent rootPane = new ApplicationUI(model, view);
 
