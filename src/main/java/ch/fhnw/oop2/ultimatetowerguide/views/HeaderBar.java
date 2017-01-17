@@ -4,7 +4,6 @@ import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerListPM;
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerPM;
 import javafx.application.Platform;
 import javafx.scene.control.Button;
-import javafx.scene.control.TableView;
 import javafx.scene.control.ToolBar;
 
 /**
@@ -56,7 +55,6 @@ public class HeaderBar extends ToolBar implements ViewMixin {
             model.getTowers().remove(view.getSelectionModel().getFocusedIndex());
             model.sortTowers();
         });
-
     }
 
     public void addTower() {

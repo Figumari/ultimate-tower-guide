@@ -17,7 +17,6 @@ import java.util.Locale;
 public class EditView extends GridPane implements ViewMixin {
 
     private final TowerListPM model;
-    private final ListNav view;
 
     private final Label labelId = new Label("ID:");
     private final Label labelBuilding = new Label("Name:");
@@ -52,9 +51,8 @@ public class EditView extends GridPane implements ViewMixin {
     private TextField textFieldImageURL;
 
 
-    public EditView(TowerListPM model, ListNav view) {
+    public EditView(TowerListPM model) {
         this.model = model;
-        this.view = view;
         init();
         getStyleClass().add("edit");
     }
@@ -124,7 +122,6 @@ public class EditView extends GridPane implements ViewMixin {
     public void addEventHandlers() {
         textFieldHeightM.setOnAction(event -> model.sortTowers());
         textFieldHeightFT.setOnAction(event -> model.sortTowers());
-        textFieldImageURL.setOnAction(event -> view.getSelectionModel().select(view.getSelectionModel().getSelectedIndex()));
     }
 
     @Override

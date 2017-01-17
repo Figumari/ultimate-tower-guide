@@ -1,9 +1,7 @@
 package ch.fhnw.oop2.ultimatetowerguide.views;
 
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerListPM;
-import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerPM;
 import javafx.scene.control.SplitPane;
-import javafx.scene.control.TableView;
 
 /**
  * Created by Mario Winiker on 05.01.17.

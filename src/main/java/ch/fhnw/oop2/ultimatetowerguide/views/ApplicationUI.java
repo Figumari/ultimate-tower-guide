@@ -24,7 +24,7 @@ public class ApplicationUI extends BorderPane implements ViewMixin {
     public void initializeControls() {
         headerBar = new HeaderBar(model, view);
         detailView = new DetailView(model, view);
-        editView = new EditView(model, view);
+        editView = new EditView(model);
     }
 
     @Override

@@ -58,12 +58,8 @@ public class PresentationView extends GridPane implements ViewMixin{
         cc1.setHalignment(HPos.RIGHT);
         getColumnConstraints().add(cc1);
 
-
         imageView.setPreserveRatio(true);
         imageView.setFitWidth(200);
-
-//        deleteme
-//        setGridLinesVisible(true);
 
         labelRank.getStyleClass().add("rank");
     }
