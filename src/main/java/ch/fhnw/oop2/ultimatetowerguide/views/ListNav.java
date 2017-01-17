@@ -2,15 +2,8 @@ package ch.fhnw.oop2.ultimatetowerguide.views;
 
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerListPM;
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerPM;
-import javafx.beans.property.IntegerProperty;
-import javafx.collections.ObservableList;
-import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.layout.VBox;
-
-import javax.security.auth.callback.Callback;
 
 /**
  * Created by Mario Winiker on 20/12/2016.

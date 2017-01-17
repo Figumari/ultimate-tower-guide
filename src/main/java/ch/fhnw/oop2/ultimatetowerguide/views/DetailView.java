@@ -10,11 +10,11 @@ import javafx.scene.control.TableView;
  */
 public class DetailView extends SplitPane implements ViewMixin {
     private final TowerListPM model;
-    private final TableView<TowerPM> view;
+    private final ListNav view;
 
     private PresentationView presentationView;
 
-    public DetailView(TowerListPM model, TableView<TowerPM> view) {
+    public DetailView(TowerListPM model, ListNav view) {
         this.model = model;
         this.view = view;
         init();

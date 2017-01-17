@@ -1,138 +1,138 @@
-1;1;Burj Khalifa;Dubai;UAE;830.0;2723.0971336364746;163;2010;Adrian Smith at SOM;Neo-futurism;1.5;glass, steel, aluminum, reinforced concrete;25.1971;55.2741;https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Burj_Khalifa.jpg/240px-Burj_Khalifa.jpg;
-2;2;Shanghai Tower;Shanghai;China;632.0;2073.4908294677734;128;2015;Jun Xia (Gensler);;2.4;;31.2355;121.501;https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Shanghai_Tower_2015.jpg/480px-Shanghai_Tower_2015.jpg;
-3;3;Abraj Al-Bait Clock Tower;Mecca;Saudi Arabia;601.0;1971.7847919464111;120;2012;Dar Al-Handasah Architects;;15.0;steel/concrete composite construction;21.4189;39.8264;https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Abraj-al-Bait-Towers.JPG/550px-Abraj-al-Bait-Towers.JPG;
-4;4;Ping An Finance Centre;Shenzhen;China;599.0;1965.2231121063232;115;2016;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Ping%27an_IFC%2C_2014-12-21.jpg/135px-Ping%27an_IFC%2C_2014-12-21.jpg;
-5;5;Lotte World Tower;Seoul;South Korea;555.0;1820.8661556243896;123;2016;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Lotte_World_Tower_2016_02_14.jpg/480px-Lotte_World_Tower_2016_02_14.jpg;
-6;6;CN Tower;Toronto;Canada;553.33;1815.3871529579164;0;1973;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Toronto_-_ON_-_Toronto_Harbourfront7.jpg/480px-Toronto_-_ON_-_Toronto_Harbourfront7.jpg;
-7;7;One World Trade Center;New York City;United States;541.3;1775.9186487197874;104;2014;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/OneWorldTradeCenter.jpg/500px-OneWorldTradeCenter.jpg;
-8;8;CTF Finance Centre;Guangzhou;China;530.0;1738.845157623291;111;2016;;;0.0;;0.0;0.0;http://www.ctbuh.org/Portals/0/Media/NewsArchive/2014/Oct/six-ten/Guangzhou-CTF.jpg;
-9;9;Taipei 101;Taipei;Taiwan;509.0;1669.9475193023682;101;2004;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Taipei101.portrait.altonthompson.jpg/480px-Taipei101.portrait.altonthompson.jpg;
-10;10;Shanghai World Financial Center;Shanghai;China;492.0;1614.173240661621;101;2008;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/SWFT.jpg/450px-SWFT.jpg;
-11;11;International Commerce Centre;Hong Kong;Hong Kong;484.0;1587.9265213012695;118;2010;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/International_Commerce_Centre_201008.jpg/600px-International_Commerce_Centre_201008.jpg;
-13;12;Petronas Tower 2;Kuala Lumpur;Malaysia;452.0;1482.9396438598633;88;1998;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Torres_Petronas_Mayo_2004.jpg/400px-Torres_Petronas_Mayo_2004.jpg;
-12;13;Petronas Tower 1;Kuala Lumpur;Malaysia;452.0;1482.9396438598633;88;1998;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Torres_Petronas_Mayo_2004.jpg/400px-Torres_Petronas_Mayo_2004.jpg;
-14;14;Zifeng Tower;Nanjing;China;450.0;1476.3779640197754;89;2010;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/f/fa/Zifeng_Tower.jpg;
-16;15;KK100;Shenzhen;China;442.0;1450.1312446594238;100;2011;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/1/1e/KK100.jpg;
-15;16;Willis Tower (formerly the Sears Tower);Chicago;United States;442.0;1450.1312446594238;107;1974;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Willis_Tower_night_2.jpg/400px-Willis_Tower_night_2.jpg;
-17;17;Guangzhou International Finance Center;Guangzhou;China;440.0;1443.569564819336;103;2010;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GZIFC.jpg/500px-GZIFC.jpg;
-18;18;Wuhan Center;Wuhan;China;438.0;1437.007884979248;88;2016;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Wuhan_Center_in_Jan.%2C_2016..jpg/480px-Wuhan_Center_in_Jan.%2C_2016.jpg;
-19;19;Marina 101;Dubai;UAE;426.5;1399.2782258987427;101;2015;;;0.0;;0.0;0.0;http://www.dubaimarinaapartments.co.uk/wp-content/uploads/2013/08/marina-101.jpg;
-20;20;432 Park Avenue;New York City;United States;426.0;1397.6378059387207;88;2015;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/432_Park_Avenue_Viewed_at_Night.jpg/800px-432_Park_Avenue_Viewed_at_Night.jpg;
-21;21;Trump International Hotel and Tower;Chicago;United States;423.0;1387.7952861785889;98;2009;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/20090612_Chicago_Loop_view_of_the_L_Tracks%2C_35_East_Wacker%2C_and_Trump_International_Hotel_and_Tower_from_Wabash_Avenue.jpg/360px-20090612_Chicago_Loop_view_of_the_L_Tracks%2C_35_East_Wacker%2C_and_Trump_International_Hotel_and_Tower_from_Wabash_Avenue.jpg;
-22;22;Jin Mao Tower;Shanghai;China;420.5;1379.593186378479;88;1999;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/4/45/Jin_Mao_Tower.jpg;
-23;23;Princess Tower;Dubai;UAE;414.0;1358.2677268981934;101;2012;;;0.0;;0.0;0.0;http://dubaimarina-properties.com/uploads/marina%20images/Princess%20Tower/Dubai%20Marina%20(17).JPG;
-24;24;Al Hamra Tower;Kuwait City;Kuwait;413.0;1354.9868869781494;80;2011;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Alhamra_Tower.jpg/400px-Alhamra_Tower.jpg;
-25;25;Two International Finance Centre;Hong Kong;Hong Kong;412.0;1351.7060470581055;88;2003;;;0.0;;0.0;0.0;http://c1038.r38.cf3.rackcdn.com/group1/building6347/media/2ifc_at_twilight.jpg;
-26;26;23 Marina;Dubai;UAE;395.0;1295.9317684173584;89;2012;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/23_Marina_2%2C_Nov_2014.jpg/480px-23_Marina_2%2C_Nov_2014.jpg;
-27;27;CITIC Plaza;Guangzhou;China;391.0;1282.8084087371826;80;1997;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Guangzhou_CITIC_Plaza_DSC02461.jpg/480px-Guangzhou_CITIC_Plaza_DSC02461.jpg;
-28;28;Shun Hing Square;Shenzhen;China;384.0;1259.842529296875;69;1996;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/c/c5/Shun_Hing_Square.jpg;
-29;29;Eton Place Dalian Tower 1;Dalian;China;383.0;1256.561689376831;81;2015;;;0.0;;0.0;0.0;http://i140.photobucket.com/albums/r5/z0rgg/GoldenJubilee81f.jpg;
-30;30;Burj Mohammed bin Rashid;Abu Dhabi;UAE;381.2;1250.656177520752;88;2014;;;0.0;;0.0;0.0;https://www.accsal.com/wp-content/uploads/2016/01/Burj-Mohammad-1.jpg;
-31;31;Empire State Building;New York City;United States;381.0;1250.0000095367432;102;1931;Shreve, Lamb and Harmon;Art Deco;40948.0;;40.7484;-73.9857;https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Empire_State_Building_by_David_Shankbone_crop.jpg/500px-Empire_State_Building_by_David_Shankbone_crop.jpg;
-32;32;Elite Residence;Dubai;UAE;380.5;1248.3595895767212;87;2012;;;0.0;;0.0;0.0;
-34;33;Federation Tower (East Tower);Moscow;Russia;374.0;1227.0341300964355;95;2015;;;0.0;;0.0;0.0;
-33;34;Central Plaza;Hong Kong;Hong Kong;374.0;1227.0341300964355;78;1992;;;0.0;;0.0;0.0;
-35;35;Dalian International Trade Center;Dalian;China;370.1;1214.2388544082642;86;2016;;;0.0;;0.0;0.0;
-36;36;The Address the BLVD;Dubai;UAE;368.0;1207.3490905761719;72;2016;;;0.0;;0.0;0.0;
-37;37;Bank of China Tower;Hong Kong;Hong Kong;367.4;1205.3805866241455;70;1990;;;0.0;;0.0;0.0;
-38;38;Bank of America Tower;New York City;United States;366.0;1200.787410736084;54;2009;;;0.0;;0.0;0.0;
-39;39;Almas Tower;Dubai;UAE;363.0;1190.9448909759521;68;2009;;;0.0;;0.0;0.0;
-41;40;JW Marriott Marquis Dubai Tower 2;Dubai;UAE;355.0;1164.6981716156006;82;2012;;;0.0;;0.0;0.0;
-40;41;JW Marriott Marquis Dubai Tower 1;Dubai;UAE;355.0;1164.6981716156006;82;2012;;;0.0;;0.0;0.0;
-42;42;Emirates Office Tower;Dubai;UAE;354.6;1163.385835647583;54;2000;;;0.0;;0.0;0.0;
-43;43;OKO Tower - South Tower;Moscow;Russia;354.0;1161.4173316955566;85;2015;;;0.0;;0.0;0.0;
-44;44;The Marina Torch;Dubai;UAE;352.0;1154.8556518554688;86;2011;;;0.0;;0.0;0.0;
-45;45;Forum 66 Tower 2;Shenyang;China;351.0;1151.5748119354248;68;2015;;;0.0;;0.0;0.0;
-47;46;Stratosphere Las Vegas;Las Vegas;United States;350.2;1148.9501399993896;0;1996;;;0.0;;0.0;0.0;
-46;47;The Pinnacle;Guangzhou;China;350.2;1148.9501399993896;60;2012;;;0.0;;0.0;0.0;
-48;48;Tuntex Sky Tower;Kaohsiung;Taiwan;347.0;1138.451452255249;85;1997;;;0.0;;0.0;0.0;
-49;49;Aon Center;Chicago;United States;346.3;1136.1548643112183;83;1973;;;0.0;;0.0;0.0;
-50;50;The Center;Hong Kong;Hong Kong;346.0;1135.170612335205;73;1998;;;0.0;;0.0;0.0;
-51;51;John Hancock Center;Chicago;United States;344.0;1128.6089324951172;100;1969;;;0.0;;0.0;0.0;
-53;52;Ahmed Abdul Rahim Al Attar Tower;Dubai;UAE;342.0;1122.0472526550293;76;2015;;;0.0;;0.0;0.0;
-52;53;ADNOC Headquarters;Abu Dhabi;UAE;342.0;1122.0472526550293;76;2015;;;0.0;;0.0;0.0;
-54;54;The Wharf Times Square;Wuxi;China;339.0;1112.2047328948975;68;2014;;;0.0;;0.0;0.0;
-55;55;Chongqing World Financial Center;Chongqing;China;338.9;1111.876648902893;78;2014;;;0.0;;0.0;0.0;
-56;56;Mercury City Tower;Moscow;Russia;338.8;1111.5485649108887;75;2013;;;0.0;;0.0;0.0;
-57;57;Tianjin Modern City Office Tower;Tianjin;China;338.0;1108.9238929748535;65;2015;;;0.0;;0.0;0.0;
-58;58;Tianjin World Financial Center;Tianjin;China;337.0;1105.6430530548096;79;2010;;;0.0;;0.0;0.0;
-60;59;Twin Towers Guiyang, West Tower;Guiyang;China;335.0;1099.0813732147217;74;2017;;;0.0;;0.0;0.0;
-59;60;Twin Towers Guiyang, East Tower;Guiyang;China;335.0;1099.0813732147217;74;2017;;;0.0;;0.0;0.0;
-62;61;Rose Tower;Dubai;UAE;333.0;1092.5196933746338;72;2007;;;0.0;;0.0;0.0;
-61;62;Shimao International Plaza;Shanghai;China;333.0;1092.5196933746338;61;2005;;;0.0;;0.0;0.0;
-63;63;Minsheng Bank Building;Wuhan;China;331.0;1085.958013534546;68;2008;;;0.0;;0.0;0.0;
-67;64;Yuexiu Fortune Center Tower 1;Wuhan;China;330.0;1082.677173614502;66;2017;;;0.0;;0.0;0.0;
-66;65;Zhuhai St. Regis Hotel & Office Tower;Zhuhai;China;330.0;1082.677173614502;67;2017;;;0.0;;0.0;0.0;
-65;66;Ryugyong Hotel;Pyongyang;North Korea;330.0;1082.677173614502;105;1992;;;0.0;;0.0;0.0;
-64;67;China World Trade Center Tower 3;Beijing;China;330.0;1082.677173614502;74;2009;;;0.0;;0.0;0.0;
-68;68;Hon Kwok City Center;Shenzhen;China;329.4;1080.7086696624756;80;2015;;;0.0;;0.0;0.0;
-69;69;Keangnam Hanoi Landmark Tower;Hanoi;Vietnam;328.6;1078.0839977264404;72;2012;;;0.0;;0.0;0.0;
-72;70;Wuxi Suning Plaza 1;Wuxi;China;328.0;1076.115493774414;68;2014;;;0.0;;0.0;0.0;
-71;71;Longxi International Hotel;Huaxi Village;China;328.0;1076.115493774414;72;2011;;;0.0;;0.0;0.0;
-70;72;Al Yaqoub Tower;Dubai;UAE;328.0;1076.115493774414;69;2013;;;0.0;;0.0;0.0;
-73;73;The Index;Dubai;UAE;326.0;1069.5538139343262;80;2010;;;0.0;;0.0;0.0;
-74;74;Guangxi Finance Plaza;Nanning;China;325.0;1066.2729740142822;68;2016;;;0.0;;0.0;0.0;
-76;75;Deji Plaza Phase 2;Nanjing;China;324.0;1062.9921340942383;62;2013;;;0.0;;0.0;0.0;
-75;76;The Landmark;Abu Dhabi;UAE;324.0;1062.9921340942383;72;2012;;;0.0;;0.0;0.0;
-77;77;Yantai Shimao No.1 The Harbour;Yantai;China;323.0;1059.7112941741943;59;2015;;;0.0;;0.0;0.0;
-78;78;Q1;Gold Coast;Australia;322.5;1058.0708742141724;80;2005;;;0.0;;0.0;0.0;
-79;79;Wenzhou World Trade Center;Wenzhou;China;322.0;1056.4304542541504;68;2010;;;0.0;;0.0;0.0;
-80;80;Burj Al Arab;Dubai;UAE;321.0;1053.1496143341064;60;1999;;;0.0;;0.0;0.0;
-81;81;Nina Tower;Hong Kong;Hong Kong;320.4;1051.18111038208;80;2007;;;0.0;;0.0;0.0;
-82;82;Sinar Mas Center 1;Shanghai;China;319.6;1048.556438446045;66;2016;;;0.0;;0.0;0.0;
-84;83;Global City Square;Guangzhou;China;318.9;1046.2598505020142;67;2015;;;0.0;;0.0;0.0;
-83;84;Chrysler Building;New York City;United States;318.9;1046.2598505020142;77;1930;;;0.0;;0.0;0.0;
-85;85;New York Times Building;New York City;United States;318.8;1045.9317665100098;52;2007;;;0.0;;0.0;0.0;
-86;86;HHHR Tower;Dubai;UAE;317.0;1040.0262546539307;72;2010;;;0.0;;0.0;0.0;
-87;87;Chongqing IFS T1;Chongqing;China;316.0;1036.7454147338867;65;2016;;;0.0;;0.0;0.0;
-89;88;Changsha IFS Tower T2;Changsha;China;315.0;1033.4645748138428;65;2017;;;0.0;;0.0;0.0;
-88;89;Nanjing International Youth Cultural Centre Tower 1;Nanjing;China;315.0;1033.4645748138428;68;2015;;;0.0;;0.0;0.0;
-90;90;MahaNakhon;Bangkok;Thailand;314.2;1030.8399028778076;75;2016;;;0.0;;0.0;0.0;
-91;91;Bank of America Plaza;Atlanta;United States;312.0;1023.6220550537109;55;1992;;;0.0;;0.0;0.0;
-92;92;Moi Center;Shenyang;China;311.0;1020.341215133667;75;2012;;;0.0;;0.0;0.0;
-93;93;U.S. Bank Tower;Los Angeles;United States;310.3;1018.0446271896362;73;1989;;;0.0;;0.0;0.0;
-95;94;Ocean Heights;Dubai;UAE;310.0;1017.060375213623;82;2010;;;0.0;;0.0;0.0;
-94;95;Menara Telekom;Kuala Lumpur;Malaysia;310.0;1017.060375213623;55;2001;;;0.0;;0.0;0.0;
-96;96;Pearl River Tower;Guangzhou;China;309.6;1015.7480392456056;71;2013;;;0.0;;0.0;0.0;
-97;97;Fortune Center;Guangzhou;China;309.4;1015.0918712615966;68;2015;;;0.0;;0.0;0.0;
-98;98;Jumeirah Emirates Towers Hotel;Dubai;UAE;309.0;1013.7795352935791;56;2000;;;0.0;;0.0;0.0;
-99;99;Stalnaya Vershina;Moscow;Russia;308.9;1013.4514513015746;72;2015;;;0.0;;0.0;0.0;
-100;100;Burj Rafal;Riyadh;Saudi Arabia;308.0;1010.4986953735352;68;2013;;;0.0;;0.0;0.0;
-102;101;Wanda Plaza 2;Kunming;China;307.0;1007.2178554534912;70;2016;;;0.0;;0.0;0.0;
-101;102;Wanda Plaza 1;Kunming;China;307.0;1007.2178554534912;70;2016;;;0.0;;0.0;0.0;
-103;103;Franklin Center;Chicago;United States;306.9;1006.8897714614867;60;1989;;;0.0;;0.0;0.0;
-104;104;Cayan Tower;Dubai;UAE;306.4;1005.2493515014647;76;2013;;;0.0;;0.0;0.0;
-105;105;One57;New York City;United States;306.1;1004.2650995254518;75;2013;;;0.0;;0.0;0.0;
-107;106;The Shard;London;United Kingdom;306.0;1003.9370155334473;73;2012;;;0.0;;0.0;0.0;
-106;107;East Pacific Center Tower A;Shenzhen;China;306.0;1003.9370155334473;85;2012;;;0.0;;0.0;0.0;
-108;108;JPMorgan Chase Tower;Houston;United States;305.4;1001.9685115814208;75;1982;;;0.0;;0.0;0.0;
-109;109;Etihad Tower 2;Abu Dhabi;UAE;305.3;1001.6404275894165;79;2011;;;0.0;;0.0;0.0;
-110;110;Northeast Asia Trade Tower;Incheon;South Korea;305.0;1000.6561756134033;68;2010;;;0.0;;0.0;0.0;
-111;111;Baiyoke Tower II;Bangkok;Thailand;304.0;997.3753356933594;85;1997;;;0.0;;0.0;0.0;
-113;112;Shenzhen CFC Changfu Centre;Shenzhen;China;303.8;996.7191677093506;68;2016;;;0.0;;0.0;0.0;
-112;113;Wuxi Maoye City - Marriott Hotel;Wuxi;China;303.8;996.7191677093506;68;2014;;;0.0;;0.0;0.0;
-114;114;Two Prudential Plaza;Chicago;United States;303.3;995.0787477493286;64;1990;;;0.0;;0.0;0.0;
-120;115;Leatop Plaza;Guangzhou;China;303.0;994.0944957733154;65;2011;;;0.0;;0.0;0.0;
-119;116;Greenland Puli Center;Jinan;China;303.0;994.0944957733154;60;2015;;;0.0;;0.0;0.0;
-118;117;Jiangxi Nanchang Greenland Central Plaza 2;Nanchang;China;303.0;994.0944957733154;59;2015;;;0.0;;0.0;0.0;
-117;118;Jiangxi Nanchang Greenland Central Plaza 1;Nanchang;China;303.0;994.0944957733154;59;2015;;;0.0;;0.0;0.0;
-116;119;KAFD World Trade Center;Riyadh;Saudi Arabia;303.0;994.0944957733154;67;2015;;;0.0;;0.0;0.0;
-115;120;Diwang International Fortune Center;Liuzhou;China;303.0;994.0944957733154;75;2015;;;0.0;;0.0;0.0;
-121;121;Wells Fargo Plaza;Houston;United States;302.4;992.125991821289;71;1983;;;0.0;;0.0;0.0;
-122;122;Kingdom Centre;Riyadh;Saudi Arabia;302.3;991.7979078292847;41;2002;;;0.0;;0.0;0.0;
-123;123;The Address Downtown Burj Khalifa;Dubai;UAE;302.2;991.4698238372803;63;2008;;;0.0;;0.0;0.0;
-125;124;Moscow Tower;Moscow;Russia;302.0;990.8136558532715;76;2010;;;0.0;;0.0;0.0;
-124;125;Gate of the Orient;Suzhou;China;302.0;990.8136558532715;68;2015;;;0.0;;0.0;0.0;
-127;126;Huachuang International Plaza;Changsha;China;301.0;987.5328159332275;66;2017;;;0.0;;0.0;0.0;
-126;127;We've the Zenith Tower A;Busan;South Korea;301.0;987.5328159332275;80;2011;;;0.0;;0.0;0.0;
-128;128;Shenzhen Zhongzhou Holdings Financial Center Tower A;Shenzhen;China;300.8;986.8766479492188;61;2014;;;0.0;;0.0;0.0;
-132;129;Aspire Tower;Doha;Qatar;300.0;984.2519760131836;36;2007;;;0.0;;0.0;0.0;
-131;130;Arraya 2;Kuwait City;Kuwait;300.0;984.2519760131836;60;2009;;;0.0;;0.0;0.0;
-130;131;Abeno Harukas;Osaka;Japan;300.0;984.2519760131836;60;2014;;;0.0;;0.0;0.0;
-129;132;Gran Torre Santiago;Santiago;Chile;300.0;984.2519760131836;62;2012;;;0.0;;0.0;0.0;
-135;133;4 World Trade Center;New York City;United States;298.0;977.6902961730957;65;2013;;;0.0;;0.0;0.0;
-134;134;One Island East;Hong Kong;Hong Kong;298.0;977.6902961730957;68;2008;;;0.0;;0.0;0.0;
-133;135;First Canadian Place;Toronto;Canada;298.0;977.6902961730957;72;1976;;;0.0;;0.0;0.0;
-137;136;Comcast Center;Philadelphia;United States;297.0;974.4094562530518;57;2008;;;0.0;;0.0;0.0;
-136;137;Eureka Tower;Melbourne;Australia;297.0;974.4094562530518;91;2006;;;0.0;;0.0;0.0;
-5df771ed-fdf1-42f6-ab5d-091fb1154f51;0;null;null;null;0.0;0.0;0;0;null;null;0.0;null;0.0;0.0;null
+dc92cde9-2b92-4dfb-927f-38c94dcc611e;1;Seppi 01;Kurka;Schweiz;1999.8;0.0;0;0;Hans;;0.0;;0.0;0.0;https://s-media-cache-ak0.pinimg.com/originals/eb/65/37/eb6537e97cdd7bbc76866dfd396e4067.jpg
+9e2e6d3a-7d88-404a-8f5d-26b3598e6a1e;2;Burj Khalifa;Dubai;UAE;830.0;2723.0971336364746;163;2010;Adrian Smith at SOM;Neo-futurism;1.5;glass, steel, aluminum, reinforced concrete;25.1971;55.2741;https://upload.wikimedia.org/wikipedia/en/thumb/9/93/Burj_Khalifa.jpg/240px-Burj_Khalifa.jpg
+e52e51f0-c876-4e48-9242-c26e348f38d5;3;Shanghai Tower;Shanghai;China;632.0;2073.4908294677734;128;2015;Jun Xia (Gensler);;2.4;;31.2355;121.501;https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Shanghai_Tower_2015.jpg/480px-Shanghai_Tower_2015.jpg
+d51377ae-0a27-4d1f-9422-6e467b5eb7ba;4;Abraj Al-Bait Clock Tower;Mecca;Saudi Arabia;601.0;1971.7847919464111;120;2012;Dar Al-Handasah Architects;;15.0;steel/concrete composite construction;21.4189;39.8264;https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Abraj-al-Bait-Towers.JPG/550px-Abraj-al-Bait-Towers.JPG
+04002021-cad1-4be1-9d65-57da3e3b2f15;5;Ping An Finance Centre;Shenzhen;China;599.0;1965.2231121063232;115;2016;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Ping%27an_IFC%2C_2014-12-21.jpg/135px-Ping%27an_IFC%2C_2014-12-21.jpg
+622f2e54-f8da-4700-826a-06024734f4ca;6;Lotte World Tower;Seoul;South Korea;555.0;1820.8661556243896;123;2016;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Lotte_World_Tower_2016_02_14.jpg/480px-Lotte_World_Tower_2016_02_14.jpg
+7b4c7774-cdfc-41a8-b9e5-21eb552bdf1d;7;CN Tower;Toronto;Canada;553.33;1815.3871529579164;0;1973;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Toronto_-_ON_-_Toronto_Harbourfront7.jpg/480px-Toronto_-_ON_-_Toronto_Harbourfront7.jpg
+af74b7ae-a51a-463f-98f2-32e9c4703bda;8;One World Trade Center;New York City;United States;541.3;1775.9186487197874;104;2014;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/OneWorldTradeCenter.jpg/500px-OneWorldTradeCenter.jpg
+cbcc5b5d-a12a-43f5-80aa-e9f8bf4caddc;9;CTF Finance Centre;Guangzhou;China;530.0;1738.845157623291;111;2016;;;0.0;;0.0;0.0;http://www.ctbuh.org/Portals/0/Media/NewsArchive/2014/Oct/six-ten/Guangzhou-CTF.jpg
+24c448a7-759c-4a10-ae64-188cec950b9b;10;Taipei 101;Taipei;Taiwan;509.0;1669.9475193023682;101;2004;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Taipei101.portrait.altonthompson.jpg/480px-Taipei101.portrait.altonthompson.jpg
+3d4af981-3913-470a-9867-8f61800c82b7;11;Shanghai World Financial Center;Shanghai;China;492.0;1614.173240661621;101;2008;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/SWFT.jpg/450px-SWFT.jpg
+f600880e-2499-450a-bdd7-5dded927e67b;12;International Commerce Centre;Hong Kong;Hong Kong;484.0;1587.9265213012695;118;2010;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/International_Commerce_Centre_201008.jpg/600px-International_Commerce_Centre_201008.jpg
+9e0b1e08-6c2a-460e-bcc4-18e240040cf4;13;Petronas Tower 1;Kuala Lumpur;Malaysia;452.0;1482.9396438598633;88;1998;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Torres_Petronas_Mayo_2004.jpg/400px-Torres_Petronas_Mayo_2004.jpg
+f3bafe74-e5ab-453e-bd61-b82b8646958f;14;Petronas Tower 2;Kuala Lumpur;Malaysia;452.0;1482.9396438598633;88;1998;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Torres_Petronas_Mayo_2004.jpg/400px-Torres_Petronas_Mayo_2004.jpg
+2a87fa61-1d89-4743-93bf-1bd5628aeb46;15;Zifeng Tower;Nanjing;China;450.0;1476.3779640197754;89;2010;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/f/fa/Zifeng_Tower.jpg
+b011a403-ed31-4eca-b9b6-b2de26aee69f;16;Willis Tower (formerly the Sears Tower);Chicago;United States;442.0;1450.1312446594238;107;1974;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Willis_Tower_night_2.jpg/400px-Willis_Tower_night_2.jpg
+1c3cc248-f34a-4798-9043-7d23d3af6dfc;17;KK100;Shenzhen;China;442.0;1450.1312446594238;100;2011;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/1/1e/KK100.jpg
+7df2530a-49a8-4b27-abb3-54e4577ff072;18;Guangzhou International Finance Center;Guangzhou;China;440.0;1443.569564819336;103;2010;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GZIFC.jpg/500px-GZIFC.jpg
+996a2d58-afb2-403c-984c-5929941e0c35;19;Wuhan Center;Wuhan;China;438.0;1437.007884979248;88;2016;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Wuhan_Center_in_Jan.%2C_2016..jpg/480px-Wuhan_Center_in_Jan.%2C_2016.jpg
+296dfc6e-23a1-4d0a-8194-2759d009d838;20;The Marina Torch;Dubai;UAE;426.6;1154.8556518554688;86;2011;Hans;;1.0E10;;0.0;0.0;https://s-media-cache-ak0.pinimg.com/originals/eb/65/37/eb6537e97cdd7bbc76866dfd396e4067.jpg
+df1cd3b4-5ef4-4cf0-b13a-931ea7c5928e;21;Marina 101;Dubai;UAE;426.5;1399.2782258987427;101;2015;;;0.0;;0.0;0.0;http://www.dubaimarinaapartments.co.uk/wp-content/uploads/2013/08/marina-101.jpg
+c0e12f51-3937-42c0-9971-fd8a39914836;22;432 Park Avenue;New York City;United States;426.0;1397.6378059387207;88;2015;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/432_Park_Avenue_Viewed_at_Night.jpg/800px-432_Park_Avenue_Viewed_at_Night.jpg
+cb2997b1-4e37-45e0-b90d-43362a14df9b;23;Trump International Hotel and Tower;Chicago;United States;423.0;1387.7952861785889;98;2009;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/20090612_Chicago_Loop_view_of_the_L_Tracks%2C_35_East_Wacker%2C_and_Trump_International_Hotel_and_Tower_from_Wabash_Avenue.jpg/360px-20090612_Chicago_Loop_view_of_the_L_Tracks%2C_35_East_Wacker%2C_and_Trump_International_Hotel_and_Tower_from_Wabash_Avenue.jpg
+67294494-f4d1-41bb-baf3-65321f6a274c;24;Jin Mao Tower;Shanghai;China;420.5;1379.593186378479;88;1999;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/4/45/Jin_Mao_Tower.jpg
+17d31c99-2003-4ee2-b9af-28033c332f1b;25;Princess Tower;Dubai;UAE;414.0;1358.2677268981934;101;2012;;;0.0;;0.0;0.0;http://dubaimarina-properties.com/uploads/marina%20images/Princess%20Tower/Dubai%20Marina%20(17).JPG
+c6830a81-6f1a-4a6a-8e85-eb0c2ef746db;26;Al Hamra Tower;Kuwait City;Kuwait;413.0;1354.9868869781494;80;2011;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Alhamra_Tower.jpg/400px-Alhamra_Tower.jpg
+faebc7d2-109c-4525-a10a-cdfa0dee0e46;27;Two International Finance Centre;Hong Kong;Hong Kong;412.0;1351.7060470581055;88;2003;;;0.0;;0.0;0.0;http://c1038.r38.cf3.rackcdn.com/group1/building6347/media/2ifc_at_twilight.jpg
+8279099a-1a96-4c3e-b7a0-17e21b3502a4;28;23 Marina;Dubai;UAE;395.0;1295.9317684173584;89;2012;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/23_Marina_2%2C_Nov_2014.jpg/480px-23_Marina_2%2C_Nov_2014.jpg
+9606ed9b-6bc1-45a4-b693-2d360656e5dd;29;CITIC Plaza;Guangzhou;China;391.0;1282.8084087371826;80;1997;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Guangzhou_CITIC_Plaza_DSC02461.jpg/480px-Guangzhou_CITIC_Plaza_DSC02461.jpg
+416cdd7d-6cb3-4eb4-9b25-8152c3d9b3ca;30;Shun Hing Square;Shenzhen;China;384.0;1259.842529296875;69;1996;;;0.0;;0.0;0.0;https://upload.wikimedia.org/wikipedia/commons/c/c5/Shun_Hing_Square.jpg
+cc18af6b-5280-46da-b91d-d3d7d9af8ff8;31;Eton Place Dalian Tower 1;Dalian;China;383.0;1256.561689376831;81;2015;;;0.0;;0.0;0.0;http://i140.photobucket.com/albums/r5/z0rgg/GoldenJubilee81f.jpg
+17e38225-71ea-41ed-8986-871062fec595;32;Burj Mohammed bin Rashid;Abu Dhabi;UAE;381.2;1250.656177520752;88;2014;;;0.0;;0.0;0.0;https://www.accsal.com/wp-content/uploads/2016/01/Burj-Mohammad-1.jpg
+6b86de7a-8756-47f4-bf0e-0472f0f1fd07;33;Empire State Building;New York City;United States;381.0;1250.0000095367432;102;1931;Shreve, Lamb and Harmon;Art Deco;40948.0;;40.7484;-73.9857;https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Empire_State_Building_by_David_Shankbone_crop.jpg/500px-Empire_State_Building_by_David_Shankbone_crop.jpg
+36435f65-7f2c-4691-aced-ad0fe2ab8f43;34;Elite Residence;Dubai;UAE;380.5;1248.3595895767212;87;2012;;;0.0;;0.0;0.0;
+706ba434-0783-455b-9abf-497b6b8977dd;35;Central Plaza;Hong Kong;Hong Kong;374.0;1227.0341300964355;78;1992;;;0.0;;0.0;0.0;
+ab9ec6e4-8129-48f9-b1f5-0d2bab26f96b;36;Federation Tower (East Tower);Moscow;Russia;374.0;1227.0341300964355;95;2015;;;0.0;;0.0;0.0;
+51060cc4-ef0f-4d86-b160-4fa11ba03ae9;37;Dalian International Trade Center;Dalian;China;370.1;1214.2388544082642;86;2016;;;0.0;;0.0;0.0;
+abb3d1e5-3457-438e-ba2a-5b259224f29c;38;The Address the BLVD;Dubai;UAE;368.0;1207.3490905761719;72;2016;;;0.0;;0.0;0.0;
+c5e5e70d-af07-400f-b2ed-6988b83ad232;39;Bank of China Tower;Hong Kong;Hong Kong;367.4;1205.3805866241455;70;1990;;;0.0;;0.0;0.0;
+8e13b64a-49ee-4701-9bac-344aa0e98b81;40;Bank of America Tower;New York City;United States;366.0;1200.787410736084;54;2009;;;0.0;;0.0;0.0;
+37f537a0-328a-4896-8004-a04f2e545734;41;Almas Tower;Dubai;UAE;363.0;1190.9448909759521;68;2009;;;0.0;;0.0;0.0;
+179711f6-326d-4ee0-addc-0ae58bbcdfb6;42;JW Marriott Marquis Dubai Tower 1;Dubai;UAE;355.0;1164.6981716156006;82;2012;;;0.0;;0.0;0.0;
+2c6e6006-a571-4cf5-baa0-5d02487d5afc;43;JW Marriott Marquis Dubai Tower 2;Dubai;UAE;355.0;1164.6981716156006;82;2012;;;0.0;;0.0;0.0;
+b3620a0d-e2db-471d-81a2-4281ed6ce166;44;Emirates Office Tower;Dubai;UAE;354.6;1163.385835647583;54;2000;;;0.0;;0.0;0.0;
+a919fef7-1c6d-44ae-b5a2-ac3d0bef6422;45;OKO Tower - South Tower;Moscow;Russia;354.0;1161.4173316955566;85;2015;;;0.0;;0.0;0.0;
+d34ce7cb-0dde-4aee-9761-6a3e076897ff;46;Forum 66 Tower 2;Shenyang;China;351.0;1151.5748119354248;68;2015;;;0.0;;0.0;0.0;
+748cb778-d37c-4f75-9f35-1269250cd152;47;The Pinnacle;Guangzhou;China;350.2;1148.9501399993896;60;2012;;;0.0;;0.0;0.0;
+cd0840f7-5e76-4c12-a09c-f59fd555e227;48;Stratosphere Las Vegas;Las Vegas;United States;350.2;1148.9501399993896;0;1996;;;0.0;;0.0;0.0;
+df33e9d0-8396-4769-aad4-f28694b4dee8;49;Tuntex Sky Tower;Kaohsiung;Taiwan;347.0;1138.451452255249;85;1997;;;0.0;;0.0;0.0;
+a1051477-b7f6-450b-aff4-a56231680882;50;Aon Center;Chicago;United States;346.3;1136.1548643112183;83;1973;;;0.0;;0.0;0.0;
+24e5d3e7-61aa-4e12-9196-b5f5897d9594;51;The Center;Hong Kong;Hong Kong;346.0;1135.170612335205;73;1998;;;0.0;;0.0;0.0;
+297077a3-6f78-4e4c-b86d-f8a358721e4c;52;John Hancock Center;Chicago;United States;344.0;1128.6089324951172;100;1969;;;0.0;;0.0;0.0;
+e8d2b9eb-9a4d-4916-8d20-57e8d52ec669;53;ADNOC Headquarters;Abu Dhabi;UAE;342.0;1122.0472526550293;76;2015;;;0.0;;0.0;0.0;
+d3f845fd-6044-4627-839d-ab4179215546;54;Ahmed Abdul Rahim Al Attar Tower;Dubai;UAE;342.0;1122.0472526550293;76;2015;;;0.0;;0.0;0.0;
+7fdd6596-72fa-46ee-a8a2-4966b19cbe9e;55;The Wharf Times Square;Wuxi;China;339.0;1112.2047328948975;68;2014;;;0.0;;0.0;0.0;
+557983a2-5454-484d-9748-0650a0cfb332;56;Chongqing World Financial Center;Chongqing;China;338.9;1111.876648902893;78;2014;;;0.0;;0.0;0.0;
+d5998e24-94ed-4f97-8401-a2c6da07030c;57;Mercury City Tower;Moscow;Russia;338.8;1111.5485649108887;75;2013;;;0.0;;0.0;0.0;
+b4b886f9-82ce-419b-8e60-13ff716bddae;58;Tianjin Modern City Office Tower;Tianjin;China;338.0;1108.9238929748535;65;2015;;;0.0;;0.0;0.0;
+d6cf93f1-acce-4458-a960-28bfcc9d04fa;59;Tianjin World Financial Center;Tianjin;China;337.0;1105.6430530548096;79;2010;;;0.0;;0.0;0.0;
+3580b1c6-21bb-449a-9b27-33519242ce5f;60;Twin Towers Guiyang, East Tower;Guiyang;China;335.0;1099.0813732147217;74;2017;;;0.0;;0.0;0.0;
+2e4315a6-95e2-4597-bdf6-a9bb89776eb0;61;Twin Towers Guiyang, West Tower;Guiyang;China;335.0;1099.0813732147217;74;2017;;;0.0;;0.0;0.0;
+816f9314-df90-4c73-be13-f1334bac9cf5;62;Shimao International Plaza;Shanghai;China;333.0;1092.5196933746338;61;2005;;;0.0;;0.0;0.0;
+1843e633-558d-4893-92c5-8612a5811ee1;63;Rose Tower;Dubai;UAE;333.0;1092.5196933746338;72;2007;;;0.0;;0.0;0.0;
+8dabf4d6-0426-47b9-a750-71ed92c5ffd9;64;Minsheng Bank Building;Wuhan;China;331.0;1085.958013534546;68;2008;;;0.0;;0.0;0.0;
+034c5e7f-8c5e-4dbd-8778-6d665bdbcdae;65;China World Trade Center Tower 3;Beijing;China;330.0;1082.677173614502;74;2009;;;0.0;;0.0;0.0;
+923beaac-f495-4e23-b1e6-41d1d6ca87a7;66;Ryugyong Hotel;Pyongyang;North Korea;330.0;1082.677173614502;105;1992;;;0.0;;0.0;0.0;
+44d1964b-85b0-41db-b7ad-75622b30fcd2;67;Zhuhai St. Regis Hotel & Office Tower;Zhuhai;China;330.0;1082.677173614502;67;2017;;;0.0;;0.0;0.0;
+b5cee08b-8afd-45a7-ab2c-b35983a1c883;68;Yuexiu Fortune Center Tower 1;Wuhan;China;330.0;1082.677173614502;66;2017;;;0.0;;0.0;0.0;
+ea6db03e-7e9b-4de5-8c22-e0facb5964d4;69;Hon Kwok City Center;Shenzhen;China;329.4;1080.7086696624756;80;2015;;;0.0;;0.0;0.0;
+11deaecb-02a5-4bc6-87c0-85f15aade87b;70;Keangnam Hanoi Landmark Tower;Hanoi;Vietnam;328.6;1078.0839977264404;72;2012;;;0.0;;0.0;0.0;
+d3cf4984-a3ad-4f50-86ac-2530715ca786;71;Al Yaqoub Tower;Dubai;UAE;328.0;1076.115493774414;69;2013;;;0.0;;0.0;0.0;
+9c502027-de92-4a14-9ef5-902dd1a08883;72;Longxi International Hotel;Huaxi Village;China;328.0;1076.115493774414;72;2011;;;0.0;;0.0;0.0;
+c831af8b-8115-4e9f-b88a-bcd4f57430cb;73;Wuxi Suning Plaza 1;Wuxi;China;328.0;1076.115493774414;68;2014;;;0.0;;0.0;0.0;
+67c06a52-0523-4162-9884-23b2e4ba2678;74;The Index;Dubai;UAE;326.0;1069.5538139343262;80;2010;;;0.0;;0.0;0.0;
+bcdb73a6-5e2d-479f-8d21-41ae599784c6;75;Guangxi Finance Plaza;Nanning;China;325.0;1066.2729740142822;68;2016;;;0.0;;0.0;0.0;
+96be2b75-3979-40df-aec4-765e06df8d1b;76;The Landmark;Abu Dhabi;UAE;324.0;1062.9921340942383;72;2012;;;0.0;;0.0;0.0;
+f08a37f9-3191-4fb7-b043-4dfba92c1c9c;77;Deji Plaza Phase 2;Nanjing;China;324.0;1062.9921340942383;62;2013;;;0.0;;0.0;0.0;
+0fdac574-5ecb-4893-90cb-ed69c72b01cc;78;Yantai Shimao No.1 The Harbour;Yantai;China;323.0;1059.7112941741943;59;2015;;;0.0;;0.0;0.0;
+b5e41b17-9001-4d63-b296-3248f1679ea2;79;Q1;Gold Coast;Australia;322.5;1058.0708742141724;80;2005;;;0.0;;0.0;0.0;
+c8b611e8-73c4-4abb-9a57-6477c92eafa6;80;Wenzhou World Trade Center;Wenzhou;China;322.0;1056.4304542541504;68;2010;;;0.0;;0.0;0.0;
+e4f22c25-5563-498e-85d8-0fbea4b33150;81;Burj Al Arab;Dubai;UAE;321.0;1053.1496143341064;60;1999;;;0.0;;0.0;0.0;
+c0cc4049-e240-40ff-821f-3acaa973c185;82;Nina Tower;Hong Kong;Hong Kong;320.4;1051.18111038208;80;2007;;;0.0;;0.0;0.0;
+143272a1-1eb2-442e-ad4e-bd845e1ca8b9;83;Sinar Mas Center 1;Shanghai;China;319.6;1048.556438446045;66;2016;;;0.0;;0.0;0.0;
+0143de48-7af2-485b-9068-e8d19a6af62c;84;Chrysler Building;New York City;United States;318.9;1046.2598505020142;77;1930;;;0.0;;0.0;0.0;
+3c6c089f-6a77-4ea7-b470-24bace1e93a9;85;Global City Square;Guangzhou;China;318.9;1046.2598505020142;67;2015;;;0.0;;0.0;0.0;
+bcf21d2f-902f-4b6d-b52e-53d2d12b0333;86;New York Times Building;New York City;United States;318.8;1045.9317665100098;52;2007;;;0.0;;0.0;0.0;
+3f34ddff-d156-4699-8789-1b0ef638a3f7;87;HHHR Tower;Dubai;UAE;317.0;1040.0262546539307;72;2010;;;0.0;;0.0;0.0;
+a69f30b3-2d1d-4d36-bbda-06ac290c29aa;88;Chongqing IFS T1;Chongqing;China;316.0;1036.7454147338867;65;2016;;;0.0;;0.0;0.0;
+16aa99ea-941b-4f4d-8476-88fe91990738;89;Nanjing International Youth Cultural Centre Tower 1;Nanjing;China;315.0;1033.4645748138428;68;2015;;;0.0;;0.0;0.0;
+e594ee78-0a3c-4512-9254-759704e42f5d;90;Changsha IFS Tower T2;Changsha;China;315.0;1033.4645748138428;65;2017;;;0.0;;0.0;0.0;
+9cb8165a-7269-4780-9509-020ba5031ed0;91;MahaNakhon;Bangkok;Thailand;314.2;1030.8399028778076;75;2016;;;0.0;;0.0;0.0;
+a6673592-5536-4597-8b4e-aa66f62033fa;92;Bank of America Plaza;Atlanta;United States;312.0;1023.6220550537109;55;1992;;;0.0;;0.0;0.0;
+44214f99-2df2-496f-a18b-a96ba1172fd7;93;Moi Center;Shenyang;China;311.0;1020.341215133667;75;2012;;;0.0;;0.0;0.0;
+99cdefbe-8763-47de-9b39-dd82cbbe1ef7;94;U.S. Bank Tower;Los Angeles;United States;310.3;1018.0446271896362;73;1989;;;0.0;;0.0;0.0;
+6dfad956-9aca-49a5-830b-b441ce3cc746;95;Menara Telekom;Kuala Lumpur;Malaysia;310.0;1017.060375213623;55;2001;;;0.0;;0.0;0.0;
+f85e0c28-00fc-46d3-a5c1-dac610dcd9b8;96;Ocean Heights;Dubai;UAE;310.0;1017.060375213623;82;2010;;;0.0;;0.0;0.0;
+8d0f6ce8-b2fd-48bb-a4df-f0509ef1a082;97;Pearl River Tower;Guangzhou;China;309.6;1015.7480392456056;71;2013;;;0.0;;0.0;0.0;
+0f5834cb-cad9-43c5-bc65-f35b738db8df;98;Fortune Center;Guangzhou;China;309.4;1015.0918712615966;68;2015;;;0.0;;0.0;0.0;
+b5f1d2e7-0036-4dbf-8888-907c19391515;99;Jumeirah Emirates Towers Hotel;Dubai;UAE;309.0;1013.7795352935791;56;2000;;;0.0;;0.0;0.0;
+236e8f37-be89-49d8-8497-8900d69b9979;100;Stalnaya Vershina;Moscow;Russia;308.9;1013.4514513015746;72;2015;;;0.0;;0.0;0.0;
+58955e84-4ffa-4e5a-8e9f-e92dea0bcca3;101;Burj Rafal;Riyadh;Saudi Arabia;308.0;1010.4986953735352;68;2013;;;0.0;;0.0;0.0;
+6abef2cf-4dfc-4710-99c8-8b62aee8008e;102;Wanda Plaza 1;Kunming;China;307.0;1007.2178554534912;70;2016;;;0.0;;0.0;0.0;
+0b541cd1-28f8-4f24-99e7-4ceada50f45e;103;Wanda Plaza 2;Kunming;China;307.0;1007.2178554534912;70;2016;;;0.0;;0.0;0.0;
+2a353952-a455-4df8-bf2f-140b88d32cc7;104;Franklin Center;Chicago;United States;306.9;1006.8897714614867;60;1989;;;0.0;;0.0;0.0;
+70a8579b-8926-4279-a49a-e458119e8579;105;Cayan Tower;Dubai;UAE;306.4;1005.2493515014647;76;2013;;;0.0;;0.0;0.0;
+d6cdae05-f91f-4593-92b6-b49c7183beeb;106;One57;New York City;United States;306.1;1004.2650995254518;75;2013;;;0.0;;0.0;0.0;
+8aed7446-db01-47d4-8835-b40f4b72ed03;107;East Pacific Center Tower A;Shenzhen;China;306.0;1003.9370155334473;85;2012;;;0.0;;0.0;0.0;
+fc6f7fc6-4f8b-4351-b835-62d5056239cd;108;The Shard;London;United Kingdom;306.0;1003.9370155334473;73;2012;;;0.0;;0.0;0.0;
+d317d765-9685-44df-bf25-7e5532fec519;109;JPMorgan Chase Tower;Houston;United States;305.4;1001.9685115814208;75;1982;;;0.0;;0.0;0.0;
+e637e3f0-2db9-4d67-8b79-994eccd40848;110;Etihad Tower 2;Abu Dhabi;UAE;305.3;1001.6404275894165;79;2011;;;0.0;;0.0;0.0;
+287163c0-5c2d-47bd-9396-ede6d42950e0;111;Northeast Asia Trade Tower;Incheon;South Korea;305.0;1000.6561756134033;68;2010;;;0.0;;0.0;0.0;
+5647a2e2-e836-467d-98ef-088fb5ff8770;112;Baiyoke Tower II;Bangkok;Thailand;304.0;997.3753356933594;85;1997;;;0.0;;0.0;0.0;
+2a1d1b61-baab-4d8e-9b4c-7d1112a3a508;113;Wuxi Maoye City - Marriott Hotel;Wuxi;China;303.8;996.7191677093506;68;2014;;;0.0;;0.0;0.0;
+542e8bd4-8633-4590-9e09-f1d60d53c469;114;Shenzhen CFC Changfu Centre;Shenzhen;China;303.8;996.7191677093506;68;2016;;;0.0;;0.0;0.0;
+06c6f7bc-7914-4970-a06c-c48689ad2c78;115;Two Prudential Plaza;Chicago;United States;303.3;995.0787477493286;64;1990;;;0.0;;0.0;0.0;
+ae8e1487-24a6-42fa-be70-3d3b03773afe;116;Diwang International Fortune Center;Liuzhou;China;303.0;994.0944957733154;75;2015;;;0.0;;0.0;0.0;
+a05b7dfc-1f26-44d6-addb-60f3f14e6835;117;KAFD World Trade Center;Riyadh;Saudi Arabia;303.0;994.0944957733154;67;2015;;;0.0;;0.0;0.0;
+28595c41-0213-4e6e-934f-8bcd30035ea3;118;Jiangxi Nanchang Greenland Central Plaza 1;Nanchang;China;303.0;994.0944957733154;59;2015;;;0.0;;0.0;0.0;
+a6964af4-3d56-4bad-9484-6f3d2ce744ab;119;Jiangxi Nanchang Greenland Central Plaza 2;Nanchang;China;303.0;994.0944957733154;59;2015;;;0.0;;0.0;0.0;
+434604d6-591d-49b4-9e32-dea156f081d2;120;Greenland Puli Center;Jinan;China;303.0;994.0944957733154;60;2015;;;0.0;;0.0;0.0;
+cff5c766-6706-4706-9b5a-763570463c2b;121;Leatop Plaza;Guangzhou;China;303.0;994.0944957733154;65;2011;;;0.0;;0.0;0.0;
+ed20fe8b-62aa-4d09-8313-2723f8504498;122;Wells Fargo Plaza;Houston;United States;302.4;992.125991821289;71;1983;;;0.0;;0.0;0.0;
+b5305e85-400e-4f20-b1eb-c960978f17bb;123;Kingdom Centre;Riyadh;Saudi Arabia;302.3;991.7979078292847;41;2002;;;0.0;;0.0;0.0;
+ec2bbf35-4458-45e8-a888-a8bc5d0306c1;124;The Address Downtown Burj Khalifa;Dubai;UAE;302.2;991.4698238372803;63;2008;;;0.0;;0.0;0.0;
+d57a5670-c6cf-456c-bba5-1974f8d6219a;125;Gate of the Orient;Suzhou;China;302.0;990.8136558532715;68;2015;;;0.0;;0.0;0.0;
+34197047-39ff-400a-b4da-efe3e823dd75;126;Moscow Tower;Moscow;Russia;302.0;990.8136558532715;76;2010;;;0.0;;0.0;0.0;
+b45f5b0f-f7a8-4f65-b909-b490b7d5633c;127;We've the Zenith Tower A;Busan;South Korea;301.0;987.5328159332275;80;2011;;;0.0;;0.0;0.0;
+e79f53c4-4691-41af-8db9-26fb533c7f12;128;Huachuang International Plaza;Changsha;China;301.0;987.5328159332275;66;2017;;;0.0;;0.0;0.0;
+4f9af8bb-6e40-4772-8b26-61eb3e2966b9;129;Shenzhen Zhongzhou Holdings Financial Center Tower A;Shenzhen;China;300.8;986.8766479492188;61;2014;;;0.0;;0.0;0.0;
+38b799e5-60df-4535-be1a-893032117bdd;130;Gran Torre Santiago;Santiago;Chile;300.0;984.2519760131836;62;2012;;;0.0;;0.0;0.0;
+02ac1c0e-3efd-4292-8151-87a9cb63a66a;131;Abeno Harukas;Osaka;Japan;300.0;984.2519760131836;60;2014;;;0.0;;0.0;0.0;
+e68962fe-1605-4a29-b574-f354f2b45a8a;132;Arraya 2;Kuwait City;Kuwait;300.0;984.2519760131836;60;2009;;;0.0;;0.0;0.0;
+5a84d7b2-f81e-4e13-8ef0-c19c4c427bdb;133;Aspire Tower;Doha;Qatar;300.0;984.2519760131836;36;2007;;;0.0;;0.0;0.0;
+793718ea-bd2b-424c-b70f-f08c4af48a73;134;First Canadian Place;Toronto;Canada;298.0;977.6902961730957;72;1976;;;0.0;;0.0;0.0;
+a87cf107-f500-4bfa-9815-f2fb357806b4;135;One Island East;Hong Kong;Hong Kong;298.0;977.6902961730957;68;2008;;;0.0;;0.0;0.0;
+6355aa7a-7ecc-43fb-b274-15a19f6eff3b;136;4 World Trade Center;New York City;United States;298.0;977.6902961730957;65;2013;;;0.0;;0.0;0.0;
+ae230f0a-9bf0-4803-84dd-b4eb0ffd5ff1;137;Eureka Tower;Melbourne;Australia;297.0;974.4094562530518;91;2006;;;0.0;;0.0;0.0;
+c4223188-611b-4a99-809b-3f92b8bdf6be;138;Comcast Center;Philadelphia;United States;297.0;974.4094562530518;57;2008;;;0.0;;0.0;0.0;

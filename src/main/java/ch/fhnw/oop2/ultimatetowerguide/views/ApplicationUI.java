@@ -1,8 +1,6 @@
 package ch.fhnw.oop2.ultimatetowerguide.views;
 
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerListPM;
-import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerPM;
-import javafx.scene.control.TableView;
 import javafx.scene.layout.BorderPane;
 
 /**
@@ -10,13 +8,13 @@ import javafx.scene.layout.BorderPane;
  */
 public class ApplicationUI extends BorderPane implements ViewMixin {
     private final TowerListPM model;
-    private final TableView<TowerPM> view;
+    private final ListNav view;
 
     private HeaderBar headerBar;
     private DetailView detailView;
     private EditView editView;
 
-    public ApplicationUI(TowerListPM model, TableView view) {
+    public ApplicationUI(TowerListPM model, ListNav view) {
         this.model = model;
         this.view = view;
         init();
@@ -26,7 +24,7 @@ public class ApplicationUI extends BorderPane implements ViewMixin {
     public void initializeControls() {
         headerBar = new HeaderBar(model, view);
         detailView = new DetailView(model, view);
-        editView = new EditView(model);
+        editView = new EditView(model, view);
     }
 
     @Override

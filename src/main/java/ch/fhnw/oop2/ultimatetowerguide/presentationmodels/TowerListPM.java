@@ -112,7 +112,7 @@ public class TowerListPM {
 // ** File abspeichern ** //
 
     public void saveFile() {
-//        todo Erste Zeile Infos.
+        sortTowers();
         try {
             Files.write(Paths.get("src/main/resources/saved-towers.csv"), towers.stream().map(TowerPM::getTowerAsString).collect(Collectors.toList()));
         } catch (IOException e) {
@@ -126,7 +126,6 @@ public class TowerListPM {
         FXCollections.sort(towers, Comparator.comparing(TowerPM::getHeightM));
         FXCollections.reverse(towers);
 
-//        todo Rank passt sichnicht mehr an.
 //        Passt den Rank an.
         final int[] counter = {1};
         towers.forEach(towerPM -> {
@@ -141,12 +140,12 @@ public class TowerListPM {
         towerProxy.heightMProperty().addListener((observable, oldValue, newValue) -> {
 //            abs Prüft die Abweichung damit es keine Schlaufe gibt.
             if (Math.abs(towerProxy.heightMProperty().multiply(meterInFeet).getValue() - towerProxy.heightFTProperty().getValue()) >= 0.01) {
-                towerProxy.setHeightFT(Math.floor(towerProxy.heightMProperty().multiply(meterInFeet).getValue()*10)/10);
+                towerProxy.setHeightFT(Math.floor(towerProxy.heightMProperty().multiply(meterInFeet).getValue()*100)/100);
             }
         });
         towerProxy.heightFTProperty().addListener((observable, oldValue, newValue) -> {
             if (Math.abs(towerProxy.heightFTProperty().divide(meterInFeet).getValue() - towerProxy.heightMProperty().getValue()) >= 0.01) {
-                towerProxy.setHeightM(Math.floor(towerProxy.heightFTProperty().divide(meterInFeet).getValue()*10)/10);
+                towerProxy.setHeightM(Math.floor(towerProxy.heightFTProperty().divide(meterInFeet).getValue()*100)/100);
             }
         });
     }

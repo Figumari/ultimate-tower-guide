@@ -17,6 +17,7 @@ import java.util.Locale;
 public class EditView extends GridPane implements ViewMixin {
 
     private final TowerListPM model;
+    private final ListNav view;
 
     private final Label labelId = new Label("ID:");
     private final Label labelBuilding = new Label("Name:");
@@ -35,7 +36,6 @@ public class EditView extends GridPane implements ViewMixin {
     private final Label labelImageURL = new Label("Bild-URL:");
 
     private Label labelShowId;
-    private TextField textFieldRank;
     private TextField textFieldBuilding;
     private TextField textFieldCity;
     private TextField textFieldCountry;
@@ -52,8 +52,9 @@ public class EditView extends GridPane implements ViewMixin {
     private TextField textFieldImageURL;
 
 
-    public EditView(TowerListPM model) {
+    public EditView(TowerListPM model, ListNav view) {
         this.model = model;
+        this.view = view;
         init();
         getStyleClass().add("edit");
     }
@@ -61,7 +62,6 @@ public class EditView extends GridPane implements ViewMixin {
     @Override
     public void initializeControls() {
         labelShowId = new Label();
-        textFieldRank = new TextField();
         textFieldBuilding = new TextField();
         textFieldCity = new TextField();
         textFieldCountry = new TextField();
@@ -118,14 +118,19 @@ public class EditView extends GridPane implements ViewMixin {
         ColumnConstraints columnConstraints04 = new ColumnConstraints();
         ColumnConstraints columnConstraints05 = new ColumnConstraints(400);
         getColumnConstraints().addAll(columnConstraints01, columnConstraints02, columnConstraints03, columnConstraints04, columnConstraints05);
+    }
 
-//        deleteme
-//        setGridLinesVisible(true);
+    @Override
+    public void addEventHandlers() {
+        textFieldHeightM.setOnAction(event -> model.sortTowers());
+        textFieldHeightFT.setOnAction(event -> model.sortTowers());
+        textFieldImageURL.setOnAction(event -> view.getSelectionModel().select(view.getSelectionModel().getSelectedIndex()));
     }
 
     @Override
     public void addValueChangedListeners() {
-        textFieldHeightM.setOnAction(event -> model.sortTowers());
+        textFieldHeightM.focusedProperty().addListener(observable -> model.sortTowers());
+        textFieldHeightFT.focusedProperty().addListener(observable -> model.sortTowers());
     }
 
     @Override
@@ -133,7 +138,6 @@ public class EditView extends GridPane implements ViewMixin {
         TowerPM proxy = model.getTowerProxy();
 
         labelShowId.textProperty().bind(proxy.idProperty());
-        Bindings.bindBidirectional(textFieldRank.textProperty(), proxy.rankProperty(), new NumberStringConverter(new Locale("de", "CH")));
         textFieldBuilding.textProperty().bindBidirectional(proxy.buildingProperty());
         textFieldCity.textProperty().bindBidirectional(proxy.cityProperty());
         textFieldCountry.textProperty().bindBidirectional(proxy.countryProperty());

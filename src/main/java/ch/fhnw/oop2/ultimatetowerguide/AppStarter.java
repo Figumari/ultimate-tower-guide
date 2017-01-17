@@ -1,14 +1,11 @@
 package ch.fhnw.oop2.ultimatetowerguide;
 
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerListPM;
-import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerPM;
 import ch.fhnw.oop2.ultimatetowerguide.views.ApplicationUI;
 import ch.fhnw.oop2.ultimatetowerguide.views.ListNav;
-import com.sun.tools.javadoc.Start;
 import javafx.application.Application;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TableView;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
@@ -23,7 +20,6 @@ public class AppStarter extends Application{
         ListNav view = new ListNav(model);
 
         Parent rootPane = new ApplicationUI(model, view);
-
         Scene scene = new Scene(rootPane);
 
         String stylesheet = getClass().getResource("style.css").toExternalForm();
@@ -33,7 +29,6 @@ public class AppStarter extends Application{
         primaryStage.setTitle("Ultimate Tower Guide");
         primaryStage.setScene(scene);
         primaryStage.show();
-
     }
 
     public static void main(String[] args) {launch(args);

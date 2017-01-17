@@ -2,22 +2,14 @@ package ch.fhnw.oop2.ultimatetowerguide.views;
 
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerListPM;
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerPM;
-import com.sun.xml.internal.rngom.ast.builder.GrammarSection;
 import javafx.application.Platform;
-import javafx.beans.binding.Bindings;
-import javafx.beans.property.SimpleStringProperty;
-import javafx.beans.property.StringProperty;
+import javafx.geometry.HPos;
 import javafx.scene.control.Label;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
-import javafx.util.StringConverter;
-import javafx.util.converter.NumberStringConverter;
-
-import java.net.URL;
+import javafx.scene.layout.Priority;
 
 /**
  * Created by Mario Winiker on 20/12/2016.
@@ -25,7 +17,7 @@ import java.net.URL;
 public class PresentationView extends GridPane implements ViewMixin{
 
     private final TowerListPM model;
-    private final TableView<TowerPM> view;
+    private final ListNav view;
 
     private Label labelRank;
     private Label labelBuilding;
@@ -33,7 +25,7 @@ public class PresentationView extends GridPane implements ViewMixin{
     private Label labelHeight;
     private ImageView imageView;
 
-    public PresentationView(TowerListPM model, TableView<TowerPM> view) {
+    public PresentationView(TowerListPM model, ListNav view) {
         this.model = model;
         this.view = view;
         init();
@@ -47,28 +39,33 @@ public class PresentationView extends GridPane implements ViewMixin{
         labelBuilding = new Label();
         labelLocation = new Label();
         labelHeight = new Label();
-//        todo Immer das gleiche Bild.
         imageView = new ImageView();
     }
 
     @Override
     public void layoutControls() {
-        add(labelRank, 0, 0);
-        add(labelBuilding, 0, 1);
-        add(labelLocation, 0, 2);
-        add(labelHeight, 0, 3);
-        add(imageView, 1, 0, 1, 5);
+        add(labelRank, 1, 0);
+        add(labelBuilding, 1, 1);
+        add(labelLocation, 1, 2);
+        add(labelHeight, 1, 3);
+        add(imageView, 2, 0, 1, 5);
 
-        getColumnConstraints().add(new ColumnConstraints(400));
+        ColumnConstraints cc = new ColumnConstraints();
+        cc.setHgrow(Priority.ALWAYS);
+        getColumnConstraints().add(cc);
+
+        ColumnConstraints cc1 = new ColumnConstraints();
+        cc1.setHalignment(HPos.RIGHT);
+        getColumnConstraints().add(cc1);
+
 
         imageView.setPreserveRatio(true);
         imageView.setFitWidth(200);
 
 //        deleteme
-        setGridLinesVisible(true);
+//        setGridLinesVisible(true);
 
         labelRank.getStyleClass().add("rank");
-//        todo Komma und weiter Werte.
     }
 
     @Override

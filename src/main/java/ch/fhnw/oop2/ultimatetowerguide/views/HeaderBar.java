@@ -3,7 +3,6 @@ package ch.fhnw.oop2.ultimatetowerguide.views;
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerListPM;
 import ch.fhnw.oop2.ultimatetowerguide.presentationmodels.TowerPM;
 import javafx.application.Platform;
-import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableView;
 import javafx.scene.control.ToolBar;
@@ -13,7 +12,7 @@ import javafx.scene.control.ToolBar;
  */
 public class HeaderBar extends ToolBar implements ViewMixin {
     private final TowerListPM model;
-    private final TableView<TowerPM> view;
+    private final ListNav view;
 
     private Button save;
     private Button add;
@@ -21,7 +20,7 @@ public class HeaderBar extends ToolBar implements ViewMixin {
 
 // ** Konstruktor ** //
 
-    public HeaderBar(TowerListPM model, TableView<TowerPM> view) {
+    public HeaderBar(TowerListPM model, ListNav view) {
         this.model = model;
         this.view = view;
         init();
@@ -47,9 +46,12 @@ public class HeaderBar extends ToolBar implements ViewMixin {
 
     @Override
     public void addEventHandlers() {
-        save.addEventHandler(ActionEvent.ACTION, event -> model.saveFile());
-//        todo Generate ID
-        add.setOnAction(event -> addTower());
+        save.setOnAction(event -> {
+            model.saveFile();
+        });
+        add.setOnAction(event -> {
+            addTower();
+        });
         remove.setOnAction(event -> {
             model.getTowers().remove(view.getSelectionModel().getFocusedIndex());
             model.sortTowers();

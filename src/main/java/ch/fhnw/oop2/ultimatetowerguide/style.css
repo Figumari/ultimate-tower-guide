@@ -1,5 +1,11 @@
+.root {
+    -fx-font-family: "Helvetica Neue";
+    -fx-base: #EFF1C2;
+}
+
 .header {
     -fx-background-color: #B7C11E;
+    -fx-pref-width: 1200px;
 }
 
 .save-button {
@@ -39,21 +45,19 @@
 }
 
 .detail {
-    -fx-min-width: 1200px;
-}
-
-.listnav {
 }
 
 .presentation {
     -fx-padding: 20px;
     -fx-vgap: 20px;
+    -fx-hgap: 40px;
 
     -fx-font-size: 20px;
 }
 
 .rank {
-    -fx-font-size: 80px;
+    -fx-font-size: 100px;
+    -fx-text-fill: #23A38F;
 }
 
 .edit {
